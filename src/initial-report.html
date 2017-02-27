@@ -7,46 +7,91 @@
   </head>
   <body>
     <div class="page">
-      <header style="text-align: center; height: 30mm;">YPI</header>
+      <header style="text-align: center; height: 30mm;">{{title_filler}}</header>
       <div class="row">
-        <div class="whiteBox" style="color: black; width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">Patient:</div>
-        <div class="whiteBox" style="color: black; width: 37mm; border: none; font-size: 5mm; font-weight: bold; line-height: 1.25; text-align: left;">patient_name</div>
-        <div class="whiteBox" style="color: black; width: 139mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">(DOB patient_birthdate, patient_age)</div>
+        <div class="whiteBox" style="color: black; width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{patient}}</div>
+        <div class="whiteBox" style="color: black; width: 37mm; border: none; font-size: 5mm; font-weight: bold; line-height: 1.25; text-align: left;">{{patient_name}}</div>
+        <div class="whiteBox" style="color: black; width: 139mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">{{patient_birthdate}}{{patient_age}}</div>
       </div>
 
       <div class="row">
-        <div class="whiteBox" style="color: black; width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;"></div>
-        <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;"></div>
-        <div class="whiteBox" style="color: black; width: 39mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Date of Report:</div>
-        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">final_date</div>
+        <div class="whiteBox" style="color: black; width: 19mm; border: none;"></div>
+        <div class="whiteBox" style="color: black; width: 107mm; border: none;"></div>
+        <div class="whiteBox" style="color: black; width: 39mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">{{report_date}}</div>
+        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{final_date}}</div>
       </div>
 
       <div class="row">
-        <div class="whiteBox" style="color: black; width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">Provider:</div>
-        <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">physician_name</div>
-        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 1.75; text-align: right; font-size: 4mm;">Accessioned:</div>
-        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">accession_date</div>
+        <div class="whiteBox" style="color: black; width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{provider}}</div>
+        <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">{{physician_name}}</div>
+        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 1.75; text-align: right; font-size: 4mm;">{{accessioned}}</div>
+        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{accession_date}}</div>
       </div>
 
       <div class="row">
-        <div class="whiteBox" style="color: black; width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;"></div>
-        <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">client_name</div>
-        <div class="whiteBox" style="color: black; width: 39mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Date of service:</div>
-        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">collection_date</div>
+        <div class="whiteBox" style="color: black; width: 19mm; border: none;"></div>
+        <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">{{client_name}}</div>
+        <div class="whiteBox" style="color: black; width: 39mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">{{service_date}}</div>
+        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{collection_date}}</div>
       </div>
 
       <div class="row">
-        <div class="whiteBox" style="color: black; width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;"></div>
-        <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;"></div>
-        <div class="whiteBox" style="color: black; width: 39mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Client MRN:</div>
-        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">client_mrn_no</div>
+        <div class="whiteBox" style="color: black; width: 19mm; border: none;"></div>
+        <div class="whiteBox" style="color: black; width: 107mm; border: none;"></div>
+        <div class="whiteBox" style="color: black; width: 39mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">{{client_mrn}}</div>
+        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{client_mrn_no}}</div>
       </div>
 
       <div class="row">
-        <div class="whiteBox" style="color: black; width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;"></div>
-        <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">Full distribution list is provided at the end of the report</div>
-        <div class="whiteBox" style="color: black; width: 39mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Client Account No:</div>
-        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">client_account_no</div>
+        <div class="whiteBox" style="color: black; width: 19mm; border: none;"></div>
+        <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">{{full_distribution_list}}</div>
+        <div class="whiteBox" style="color: black; width: 39mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">{{client_account}}</div>
+        <div class="whiteBox" style="color: black; width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{client_account_no}}</div>
+      </div>
+
+      <div class="whiteBox" style="color: black; width: 215.5mm; height: 22.75mm; border: solid .75mm black; border-bottom: solid .375mm black; padding: .25mm;">
+        <div class="whiteBox" style="color: black; width: 214.5mm; height: 21.75mm; border: solid .25mm black;">
+          <div class="row">
+            <div class="whiteBox" style="color: black; width: 63mm; border: none; font-size: 3.5mm; line-height: 1.5; text-align: right; padding-left: 1mm; font-weight: bold;">{{analysis}}</div>
+            <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 1.5; text-align: left; padding-left: 2mm;">{{report_result}}</div>
+          </div>
+
+          <div class="row">
+            <div class="whiteBox" style="color: black; width: 90mm; border: none;"></div>
+            <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 1; text-align: center;">{{pathologist_signature}}</div>
+          </div>
+
+          <div class="row">
+            <div class="whiteBox" style="color: black; width: 90mm; border: none;"></div>
+            <div class="whiteBox" style="color: black; width: 107mm; border: none; height: 3.5mm; border: none; font-size: 2.5mm; line-height: .75; text-align: center; padding-left: 1mm;">{{e_signed}}</div>
+          </div>
+
+          <div class="row">
+            <div class="whiteBox" style="color: black; width: 19mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;">{{amendment_row}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="whiteBox" style="color: black; width: 215.5mm; height: 22.75mm; border: solid .75mm black; border-top: solid .375mm black; padding: .25mm;">
+        <div class="whiteBox" style="color: black; width: 214.5mm; height: 22mm; border: solid .25mm black;">
+          <div class="row">
+            <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 5mm; font-weight: bold;">{{amendment_date_time}}</div>
+          </div>
+
+          <div class="row">
+            <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 5mm;">{{amendment_text}}</div>
+          </div>
+
+          <div class="row">
+            <div class="whiteBox" style="color: black; width: 90mm; border: none;"></div>
+            <div class="whiteBox" style="color: black; width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: center;">{{amendment_signature}}</div>
+          </div>
+
+          <div class="row">
+            <div class="whiteBox" style="color: black; width: 90mm; border: none;"></div>
+            <div class="whiteBox" style="color: black; width: 107mm; border: none; height: 3.5mm; border: none; font-size: 2.5mm; line-height: .75; text-align: center; padding-left: 1mm;">{{signature_title}}</div>
+          </div>
+        </div>
       </div>
 
     </div>
