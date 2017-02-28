@@ -4,16 +4,25 @@
   "description": "document creation for reporting results",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precompile": "handlebars ./src -f ./src/precompile-hbs.js -c handlebars/runtime"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mjschuetze/ap-doc.git"
   },
+  "keywords": [
+    "document"
+  ],
   "author": "Mark J Schuetze",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mjschuetze/ap-doc/issues"
   },
-  "homepage": "https://github.com/mjschuetze/ap-doc#readme"
+  "homepage": "https://github.com/mjschuetze/ap-doc#readme",
+  "dependencies": {
+    "electron": "^1.4.15",
+    "handlebars": "^4.0.6",
+    "stylus": "^0.54.5"
+  }
 }
