@@ -12,7 +12,7 @@ module.exports.build = (data, callback) => {
     //Handlebars.registerPartial('surgical/gross-description', Handlebars.template['surgical/gross-description'])
     //Handlebars.registerPartial('surgical/surgical-diagnosis', Handlebars.template['surgical/surgical-diagnosis'])
     //Handlebars.registerPartial('surgical/surgical-header', Handlebars.template['surgical/surgical-header'])
-    //var template = Handlebars.templates['surgical/page']
+    var template = Handlebars.templates['documents/surgical/page']
 
     var result = template(data)
     callback(null, result)
