@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      {{#if title}}
+        {{title}}
+      {{else}}
+        Open AP LIS Requisition
+      {{/if}}
+    </title>
+    <style>
+      {{> style }}
+    </style>
+  <body>
+    <div class="page">
+      {{#> content-block}}
+        {{!-- requisition content goes here. --}}
+      {{/content-block}}
+    </div>
+  </body>
+</html>
