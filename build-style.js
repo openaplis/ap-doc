@@ -3,6 +3,7 @@ const stylus = require('stylus')
 
 fs.readFile('./src/core/style/style.styl', 'utf8', function (err, str) {
   if (err) throw err
+
   stylus.render(str, function (err, css) {
     if (err) throw err
     fs.writeFile('./src/core/style.handlebars', css, function (err) {
@@ -10,4 +11,5 @@ fs.readFile('./src/core/style/style.styl', 'utf8', function (err, str) {
       console.log('all done')
     })
   })
+
 })

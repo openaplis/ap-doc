@@ -24,7 +24,7 @@ describe('Surgical Report', function () {
 
   it('Surgical Report Tests', function (done) {
     surgicalReport.build(inputData, function (err, html) {
-      console.log('asdfasdfasdf' + html)
+      assert.isNotNull(html)
       done()
     })
   })

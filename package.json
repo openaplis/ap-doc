@@ -8,7 +8,7 @@
     "precompile": "handlebars ./src -f ./src/precompile-hbs.js -c handlebars/runtime",
     "build-views": "handlebars ./src/core -f ./src/core/views.js -c handlebars/runtime",
     "standard": "standard",
-    "build-style": "node build-style.js",
+    "build-style": "node build-style.js"
   },
   "repository": {
     "type": "git",
