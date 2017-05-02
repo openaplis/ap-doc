@@ -16,13 +16,11 @@ describe('Surgical Report', function () {
       done()
     })
   })
-  /*
   it('Input data tests', function (done) {
     assert.notEqual(inputData, null, 'input data cannot be null')
     assert.isArray(inputData.addresses, 'addresses must be an array')
     done()
   })
-  */
   it('Surgical Report Tests', function (done) {
     surgicalReport.build(inputData, function (err, html) {
       if (err) console.log(err)
