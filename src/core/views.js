@@ -9,7 +9,7 @@ templates['layouts/base'] = template({"1":function(container,depth0,helpers,part
     + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"title","hash":{},"data":data}) : helper)))
     + "\r\n";
 },"3":function(container,depth0,helpers,partials,data) {
-    return "        Open AP LIS Requisition\r\n";
+    return "        Open AP LIS Report\r\n";
 },"5":function(container,depth0,helpers,partials,data) {
     return "";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -23,8 +23,41 @@ templates['layouts/base'] = template({"1":function(container,depth0,helpers,part
     + ((stack1 = container.invokePartial(partials["content-block"],depth0,{"name":"content-block","fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + "    </div>\r\n  </body>\r\n</html>\r\n";
 },"usePartial":true,"useData":true});
-templates['partials/footer'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<!--bottom portion of report-->\r\n<div class=\"whiteBox\" style=\"width: 217mm; height: 3mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"brownBox\" style=\"width: 100mm; border: none; text-align: left; font-size: 3mm; line-height: .75;\">Yellowstone Pathology Institute, Inc.</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; height: 3mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"brownBox\" style=\"width: 65mm; height: 3mm; font-weight: bold; border: none; text-align: left; font-size: 3mm; line-height: .75; border-bottom: solid .5mm;\">Billings</div>\r\n    <div class=\"brownBox\" style=\"width: 85mm; height: 3mm; font-weight: bold; border: none; text-align: left; font-size: 3mm; line-height: .75; border-bottom: solid .5mm;\">Cody</div>\r\n    <div class=\"brownBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; line-height: .75; text-align: right; border-bottom: solid .5mm;\">YellowstonePathology.com</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; height: 3mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">2900 12th Avenue North, Suite 295W</div>\r\n    <div class=\"whiteBox\" style=\"width: 85mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">707 Sheridan Avenue</div>\r\n    <div class=\"brownBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;\">Michael S. Brown, MD FCAP</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; height: 3mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">Billing, MT 59101</div>\r\n    <div class=\"whiteBox\" style=\"width: 85mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">Cody, WY 82414</div>\r\n    <div class=\"brownBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;\">Pamela P. Clegg, MD FCAP</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; height: 3mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\"></div>\r\n    <div class=\"whiteBox\" style=\"width: 85mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\"></div>\r\n    <div class=\"brownBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;\">Angela F. Durden, MD FCAP</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"color: black; width: 217mm; height: 3mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"width: 32.5mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">phone <span style=\"font-weight: bold;\">406.238.6360</span></div>\r\n    <div class=\"whiteBox\" style=\"width: 32.5mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">fax <span style=\"font-weight: bold;\">406.238.6361</span></div>\r\n    <div class=\"whiteBox\" style=\"width: 32.5mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">phone <span style=\"font-weight: bold;\">406.578.1850</span></div>\r\n    <div class=\"whiteBox\" style=\"width: 32.5mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">fax <span style=\"font-weight: bold;\">406.238.6361</span></div>\r\n    <div class=\"brownBox\" style=\"width: 85mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;\">Kerrie R. Emerick, MD FCAP</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; height: 3mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">toll-free <span style=\"font-weight: bold;\">1.888.400.6640</span></div>\r\n    <div class=\"whiteBox\" style=\"width: 85mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">toll-free <span style=\"font-weight: bold;\">1.88.400.6640</span></div>\r\n    <div class=\"brownBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;\">Christopher J. Nero, MD FCAP</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style= \"width: 217mm; height: 3mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\"></div>\r\n    <div class=\"whiteBox\" style=\"width: 85mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\"></div>\r\n    <div class=\"brownBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;\">Duane A. Schultz, MD FCAP</div>\r\n  </div>\r\n</div>\r\n";
+templates['partials/footer'] = template({"1":function(container,depth0,helpers,partials,data) {
+    return "    <div class=\"brownBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;\">"
+    + container.escapeExpression(container.lambda(depth0, depth0))
+    + "</div>\r\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "<div class=\"whiteBox\" style=\"width: 217.25mm; height: 32mm; border: 1px dotted;\">\r\n  <!--bottom portion of report-->\r\n  <div class=\"whiteBox\" style=\"width: 217mm; height: 3mm; border: none;\">\r\n    <div class=\"row\">\r\n      <div class=\"brownBox\" style=\"width: 100mm; border: none; text-align: left; font-size: 3mm; line-height: .75;\">Yellowstone Pathology Institute, Inc.</div>\r\n    </div>\r\n  </div>\r\n  <div class=\"whiteBox\" style=\"width: 74mm; height: 28mm; border: none; font-family: candara;\">\r\n    <div class=\"brownBox\" style=\"width: 74mm; height: 3mm; font-weight: bold; border: none; text-align: left; font-size: 3mm; line-height: .75; border-bottom: solid .5mm;\">Billings</div>\r\n    <div class=\"whiteBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">"
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["0"] : stack1)) != null ? stack1.addressline1 : stack1), depth0))
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["0"] : stack1)) != null ? stack1.addressline2 : stack1), depth0))
+    + "</div>\r\n    <div class=\"whiteBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">"
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["0"] : stack1)) != null ? stack1.city : stack1), depth0))
+    + ", "
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["0"] : stack1)) != null ? stack1.state : stack1), depth0))
+    + " "
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["0"] : stack1)) != null ? stack1.zip : stack1), depth0))
+    + "</div>\r\n    <div class=\"whiteBox\" style=\"width: 70mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\"></div>\r\n    <div class=\"whiteBox\" style=\"width: 70mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">phone: <span style=\"font-weight: bold;\"> "
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["0"] : stack1)) != null ? stack1.phone : stack1), depth0))
+    + "</span>  fax:<span style=\"font-weight: bold;\"> "
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["0"] : stack1)) != null ? stack1.fax : stack1), depth0))
+    + "</span></div>\r\n    <div class=\"whiteBox\" style=\"width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">toll-free: <span style=\"font-weight: bold;\">"
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["0"] : stack1)) != null ? stack1.tollfree : stack1), depth0))
+    + "</span></div>\r\n  </div>\r\n  <div class=\"whiteBox\" style=\"width: 74mm; height: 28mm; border: none; font-family: candara;\">\r\n    <div class=\"brownBox\" style=\"width: 74mm; height: 3mm; font-weight: bold; border: none; text-align: left; font-size: 3mm; line-height: .75; border-bottom: solid .5mm;\">Cody</div>\r\n    <div class=\"whiteBox\" style=\"width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">"
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["1"] : stack1)) != null ? stack1.addressline1 : stack1), depth0))
+    + "{[addresses.1.addressline2]}</div>\r\n    <div class=\"whiteBox\" style=\"width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">"
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["1"] : stack1)) != null ? stack1.city : stack1), depth0))
+    + ", "
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["1"] : stack1)) != null ? stack1.state : stack1), depth0))
+    + " {[addresses.1.zip]}</div>\r\n    <div class=\"whiteBox\" style=\"width: 70mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\"></div>\r\n    <div class=\"whiteBox\" style=\"width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">phone: <span style=\"font-weight: bold;\">"
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["1"] : stack1)) != null ? stack1.phone : stack1), depth0))
+    + "</span> fax: <span style=\"font-weight: bold;\">"
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.addresses : depth0)) != null ? stack1["1"] : stack1)) != null ? stack1.fax : stack1), depth0))
+    + "</span></div>\r\n    <div class=\"whiteBox\" style=\"width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;\">toll-free <span style=\"font-weight: bold;\">{[addresses.1.tollfree]}</span></div>\r\n  </div>\r\n  <div class=\"whiteBox\" style=\"width: 67mm; height: 28mm; border: none; font-family: candara;\">\r\n    <div class=\"brownBox\" style=\"width: 67mm; height: 3mm; border: none; text-align: left; font-size: 3mm; line-height: .75; text-align: right; border-bottom: solid .5mm;\">YellowstonePathology.com</div>\r\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.pathologist : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  </div>\r\n</div>\r\n";
 },"useData":true});
 templates['partials/interpretation'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;
@@ -127,15 +160,6 @@ templates['partials/ypi-reports'] = template({"compiler":[7,">= 4.0.0"],"main":f
     + container.escapeExpression(((helper = (helper = helpers.other_ypi_cases || (depth0 != null ? depth0.other_ypi_cases : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"other_ypi_cases","hash":{},"data":data}) : helper)))
     + "</div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
-templates['documents/hpv/hpv-hl7-epic'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "";
-},"useData":true});
-templates['documents/hpv/hpv-hl7-meditech'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "";
-},"useData":true});
-templates['documents/hpv/hpv-html'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "";
-},"useData":true});
 templates['documents/surgical/gross-description'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;
 
@@ -143,13 +167,27 @@ templates['documents/surgical/gross-description'] = template({"compiler":[7,">= 
     + container.escapeExpression(((helper = (helper = helpers.gross_description || (depth0 != null ? depth0.gross_description : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"gross_description","hash":{},"data":data}) : helper)))
     + "</div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
-templates['documents/surgical/page'] = template({"1":function(container,depth0,helpers,partials,data) {
-    return "  \r\n";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+templates['documents/surgical/page'] = template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    return "";
+},"2":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = container.invokePartial(partials["layouts/base"],depth0,{"name":"layouts/base","hash":{"title":"Surgical"},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
-},"usePartial":true,"useData":true});
+  return ((stack1 = container.invokePartial(partials["partials/patient-information"],depth0,{"name":"partials/patient-information","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials["partials/main-body"],depth0,{"name":"partials/main-body","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials["partials/footer"],depth0,{"name":"partials/footer","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1;
+
+  return ((stack1 = container.invokePartial(partials["layouts/base"],depth0,{"name":"layouts/base","hash":{"title":"Surgical"},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"1_d":  function(fn, props, container, depth0, data, blockParams, depths) {
+
+  var decorators = container.decorators;
+
+  fn = decorators.inline(fn,props,container,{"name":"inline","hash":{},"fn":container.program(2, data, 0, blockParams, depths),"inverse":container.noop,"args":["content-block"],"data":data}) || fn;
+  return fn;
+  }
+
+,"useDecorators":true,"usePartial":true,"useData":true,"useDepths":true});
 templates['documents/surgical/surgical-diagnosis'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 

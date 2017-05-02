@@ -11,5 +11,4 @@ fs.readFile('./src/core/style/style.styl', 'utf8', function (err, str) {
       console.log('all done')
     })
   })
-
 })

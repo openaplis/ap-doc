@@ -1,3 +1,9 @@
 {{#> layouts/base title="Surgical" }}
-  
+  {{#*inline "content-block"}}
+    {{> documents/surgical/surgical-header }}
+    {{> partials/patient-information }}
+    {{> documents/surgical/surgical-diagnosis }}
+    {{> partials/main-body }}
+    {{> partials/footer }}
+  {{/inline}}
 {{/layouts/base}}

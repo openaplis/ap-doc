@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gyn Ctyo Req</title>
+    <style>
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+      }
+      .checkBox {
+        -webkit-print-color-adjust: exact;
+      }
+    }
+    html,
+    body {
+      background: #000;
+    }
+    .page {
+      position: relative;
+      height: 278mm;
+      width: 217mm;
+      font-family: 'Verdana';
+      display: block;
+      background: #fff;
+      page-break-after: auto;
+      overflow: hidden;
+    }
+    .row {
+      height: 5mm;
+      width: 217mm;
+    }
+    .heading {
+      position: relative;
+      height: 5mm;
+      width: 217mm;
+      background: #a95346;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 0.1mm;
+      color: #a95346;
+    }
+    .whiteBox {
+      height: 5mm;
+      font-size: 3mm;
+      line-height: 2;
+      border-left: 1px solid #a95346;
+      border-bottom: 1px solid #a95346;
+      color: #000;
+      letter-spacing: 0.1mm;
+      float: left;
+      display: inline-block;
+      text-align: center;
+    }
+    .brownBox {
+      height: 5mm;
+      font-size: 3mm;
+      line-height: 2;
+      border-left: 1px solid #a95346;
+      border-bottom: 1px solid #a95346;
+      color: #a95346;
+      letter-spacing: 0.1mm;
+      float: left;
+      display: inline-block;
+      text-align: center;
+    }
+    .yellowBox {
+      height: 5mm;
+      font-size: 3mm;
+      line-height: 2;
+      border-left: 1px solid #a95346;
+      border-bottom: 1px solid #a95346;
+      color: #a95346;
+      letter-spacing: 0.1mm;
+      float: left;
+      display: inline-block;
+      text-align: center;
+      background-color: #fff19c;
+    }
+    .checkBox {
+      width: 2mm;
+      height: 2mm;
+      background-color: #fff;
+      position: relative;
+      display: inline-block;
+      box-shadow: 2px 2px #a95346;
+    }
+    .underLine {
+      height: 4mm;
+      width: 68mm;
+      position: relative;
+      display: inline-block;
+      float: left;
+    }
+    .highlight {
+      background-color: #fff19c;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="whiteBox" style="width: 217.25mm; height: 32mm; border: 1px dotted;">
+        <!--bottom portion of report-->
+        <div class="whiteBox" style="width: 217mm; height: 3mm; border: none;">
+          <div class="row">
+            <div class="brownBox" style="width: 100mm; border: none; text-align: left; font-size: 3mm; line-height: .75;">Yellowstone Pathology Institute, Inc.</div>
+          </div>
+        </div>
+        <div class="whiteBox" style="width: 74mm; height: 28mm; border: none; font-family: candara;">
+          <div class="brownBox" style="width: 74mm; height: 3mm; font-weight: bold; border: none; text-align: left; font-size: 3mm; line-height: .75; border-bottom: solid .5mm;">Billings</div>
+          <div class="whiteBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">{{addresses.0.addressline1}}{{addresses.0.addressline2}}</div>
+          <div class="whiteBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">{{addresses.0.city}}, {{addresses.0.state}} {{addresses.0.zip}}</div>
+          <div class="whiteBox" style="width: 70mm; height: 3mm; border: none; text-align: left; font-size: 3mm;"></div>
+          <div class="whiteBox" style="width: 70mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">phone: <span style="font-weight: bold;"> {{addresses.0.phone}}</span>  fax:<span style="font-weight: bold;"> {{addresses.0.fax}}</span></div>
+          <div class="whiteBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">toll-free: <span style="font-weight: bold;">{{addresses.0.tollfree}}</span></div>
+        </div>
+        <div class="whiteBox" style="width: 74mm; height: 28mm; border: none; font-family: candara;">
+          <div class="brownBox" style="width: 74mm; height: 3mm; font-weight: bold; border: none; text-align: left; font-size: 3mm; line-height: .75; border-bottom: solid .5mm;">Cody</div>
+          <div class="whiteBox" style="width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">{{addresses.1.addressline1}}{[addresses.1.addressline2]}</div>
+          <div class="whiteBox" style="width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">{{addresses.1.city}}, {{addresses.1.state}} {[addresses.1.zip]}</div>
+          <div class="whiteBox" style="width: 70mm; height: 3mm; border: none; text-align: left; font-size: 3mm;"></div>
+          <div class="whiteBox" style="width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">phone: <span style="font-weight: bold;">{{addresses.1.phone}}</span> fax: <span style="font-weight: bold;">{{addresses.1.fax}}</span></div>
+          <div class="whiteBox" style="width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">toll-free <span style="font-weight: bold;">{[addresses.1.tollfree]}</span></div>
+        </div>
+        <div class="whiteBox" style="width: 67mm; height: 28mm; border: none; font-family: candara;">
+          <div class="brownBox" style="width: 67mm; height: 3mm; border: none; text-align: left; font-size: 3mm; line-height: .75; text-align: right; border-bottom: solid .5mm;">YellowstonePathology.com</div>
+          {{#each pathologist}}
+          <div class="brownBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;">{{this}}</div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
