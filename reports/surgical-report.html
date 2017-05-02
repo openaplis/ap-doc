@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+        Surgical
+    </title>
+    <style>
+      @media print {
+        body {
+          -webkit-print-color-adjust: exact;
+        }
+        .checkBox {
+          -webkit-print-color-adjust: exact;
+        }
+      }
+      html,
+      body {
+        background: #000;
+      }
+      .page {
+        position: relative;
+        height: 278mm;
+        width: 217mm;
+        font-family: 'Verdana';
+        display: block;
+        background: #fff;
+        page-break-after: auto;
+        overflow: hidden;
+      }
+      .row {
+        height: 5mm;
+        width: 217mm;
+      }
+      .heading {
+        position: relative;
+        height: 5mm;
+        width: 217mm;
+        background: #a95346;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.1mm;
+        color: #a95346;
+      }
+      .whiteBox {
+        height: 5mm;
+        font-size: 3mm;
+        line-height: 2;
+        border-left: 1px solid #a95346;
+        border-bottom: 1px solid #a95346;
+        color: #000;
+        letter-spacing: 0.1mm;
+        float: left;
+        display: inline-block;
+        text-align: center;
+      }
+      .brownBox {
+        height: 5mm;
+        font-size: 3mm;
+        line-height: 2;
+        border-left: 1px solid #a95346;
+        border-bottom: 1px solid #a95346;
+        color: #a95346;
+        letter-spacing: 0.1mm;
+        float: left;
+        display: inline-block;
+        text-align: center;
+      }
+      .yellowBox {
+        height: 5mm;
+        font-size: 3mm;
+        line-height: 2;
+        border-left: 1px solid #a95346;
+        border-bottom: 1px solid #a95346;
+        color: #a95346;
+        letter-spacing: 0.1mm;
+        float: left;
+        display: inline-block;
+        text-align: center;
+        background-color: #fff19c;
+      }
+      .checkBox {
+        width: 2mm;
+        height: 2mm;
+        background-color: #fff;
+        position: relative;
+        display: inline-block;
+        box-shadow: 2px 2px #a95346;
+      }
+      .underLine {
+        height: 4mm;
+        width: 68mm;
+        position: relative;
+        display: inline-block;
+        float: left;
+      }
+      .highlight {
+        background-color: #fff19c;
+      }
+    </style>
+  <body>
+    <div class="page">
+    <!--header section of page-->
+    <div class="whiteBox" style="width: 105mm; border: none; height: 30mm; text-align: left;">
+      <img src="data:image/png;base64," height="115mm" width="775mm">
+    </div>
+    <div class="whiteBox" style="width: 108.5mm; border: none; height: 30mm; text-align: left;">
+      <div class="row">
+        <div class="brownBox" style="width: 100mm; border: none; font-size: 5mm; font-weight: bold; line-height: 2; text-align: right; padding-left: 1mm;">Surgical Pathology Report</div>
+      </div>
+      <div class="row">
+        <div class="brownBox" style="width: 100mm; border: none; font-size: 4mm; line-height: 3; text-align: right;"></div>
+      </div>
+      <div class="row">
+        <div class="whiteBox" style= "width: 100mm; border: none; font-size: 4mm; line-height: 2; text-align: right;"></div>
+      </div>
+      <div class="row">
+        <div class="whiteBox" style="width: 70mm; border: none; font-size: 4mm; line-height: 2; text-align: right;">YPI Report #:</div>
+        <div class="whiteBox" style="width: 25mm; border: none; font-size: 4mm; line-height: 2; text-align: right;"></div>
+      </div>
+      <div class="row">
+        <div class="whiteBox" style="width: 70mm; border: none; font-size: 4mm; line-height: 2; text-align: right;">Client Report #:</div>
+        <div class="whiteBox" style="width: 25mm; border: none; font-size: 4mm; line-height: 2; text-align: right;"></div>
+      </div>
+    </div>
+    <!--top portion with patient information-->
+    <div class="row">
+      <div class="whiteBox" style="width: 20mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">Patient:</div>
+      <div class="whiteBox" style="width: 45mm; border: none; font-size: 5mm; font-weight: bold; line-height: 1.25; text-align: left;"></div>
+      <div class="whiteBox" style="width: 10mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">(DOB</div>
+      <div class="whiteBox" style="width: 35mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;"></div>
+      <div class="whiteBox" style="width: 40mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">)</div>
+    </div>
+    <div class="row">
+      <div class="whiteBox" style="width: 130mm; border: none;"></div>
+      <div class="whiteBox" style="width: 46mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Report Date:</div>
+      <div class="whiteBox" style="width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;"></div>
+    </div>
+    <div class="row">
+      <div class="whiteBox" style="width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">Provider:</div>
+      <div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;"></div>
+      <div class="whiteBox" style="width: 49mm; border: none; font-size: 3.5mm; line-height: 1.75; text-align: right; font-size: 4mm;">Accessioned:</div>
+      <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;"></div>
+    </div>
+    <div class="row">
+      <div class="whiteBox" style="width: 20mm; border: none;"></div>
+      <div class="whiteBox" style="width: 108mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;"></div>
+      <div class="whiteBox" style="width: 48mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Date of Service:</div>
+      <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;"></div>
+    </div>
+    <div class="row">
+      <div class="whiteBox" style="width: 130mm; border: none;"></div>
+      <div class="whiteBox" style="width: 46mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Client MRN:</div>
+      <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;"></div>
+    </div>
+    <div class="row">
+      <div class="whiteBox" style="width: 19mm; border: none;"></div>
+      <div class="whiteBox" style="width: 100mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-bottom: 1mm;">Full distribution list is provided at the end of the report</div>
+      <div class="whiteBox" style="width: 57mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm; padding-bottom: 1mm;">Client Account No:</div>
+      <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm; padding-bottom: 1mm;"></div>
+    </div>
+    <!--middle area with outlines-->
+    <div class="whiteBox" style="width: 215.5mm; height: 45mm; border: solid .75mm black; border-bottom: solid .375mm black; padding: .25mm;">
+      <div class="whiteBox" style="width: 214.5mm; height: 44.5mm; border: solid .25mm black;">
+        <div class="row">
+          <div class="whiteBox" style="width: 63mm; border: none; font-size: 3.5mm; line-height: 1.5; text-align: left; padding-left: 1mm; font-weight: bold;">Diagnosis:</div>
+        </div>
+        <div class="row">
+          <div class="whiteBox" style="width: 63mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;"></div>
+        </div>
+        <div class="row">
+          <div class="whiteBox" style="width: 20mm; border: none; font-size: 3.5mm; line-height: 1; text-align: center; padding-left: 1mm; font-weight: bold;"></div>
+          <div class="whiteBox" style="width: 63mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;"></div>
+        </div>
+        <div class="row">
+          <div class="whiteBox" style="width: 60mm; border: none; font-size: 3.5mm; line-height: 1; text-align: center; padding-left: 1mm;">diagnosis</div>
+        </div>
+        <div class="row">
+          <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;">Comment:</div>
+          <div class="whiteBox" style="width: 63mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;"></div>
+        </div>
+        <div class="row">
+          <div class="whiteBox" style="width: 90mm; border: none;"></div>
+          <div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 1; text-align: center;"></div>
+        </div>
+        <div class="row">
+          <div class="whiteBox" style="width: 90mm; border: none;"></div>
+          <div class="whiteBox" style="width: 107mm; border: none; height: 3.5mm; border: none; font-size: 2.5mm; line-height: .5; text-align: center; padding-left: 1mm;"></div>
+        </div>
+        <div class="row">
+          <div class="whiteBox" style="width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm; font-weight: bold;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 215.5mm; height: 22.75mm; border: solid .75mm black; border-top: solid .375mm black; padding: .25mm;">
+      <div class="whiteBox" style="width: 214.5mm; height: 22.25mm; border: solid .25mm black;">
+        <div class="row">
+          <div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 5mm; font-weight: bold;"></div>
+        </div>
+        <div class="row">
+          <div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 5mm;"></div>
+        </div>
+        <div class="row">
+          <div class="whiteBox" style="width: 90mm; border: none;"></div>
+          <div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: center;"></div>
+        </div>
+        <div class="row">
+          <div class="whiteBox" style="width: 90mm; border: none;"></div>
+          <div class="whiteBox" style="width: 107mm; border: none; height: 3.5mm; border: none; font-size: 2.5mm; line-height: .75; text-align: center; padding-left: 1mm;"></div>
+        </div>
+      </div>
+    </div>
+    <!--middle main body portion of the report-->
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Cancer Case Study</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1;"></div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Microscopic Description</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1;"></div>
+      </div>
+    </div>
+    <div class="whiteBox" style="color: black; width: 216mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Specimen Description</div>
+        <div class="whiteBox" style="color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Collection Date/Time</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="color: black; width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="color: black; width: 100mm; border: none; text-align: left; line-height: 1;"></div>
+        <div class="whiteBox" style="color: black; width: 100mm; border: none; text-align: left; line-height: 1;"></div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Clinical Information</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1;"></div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Ancillary Studies</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1;"></div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; padding-left: 3.5mm; font-weight: bold;">specimen type</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Immunohistochemistry(single)</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Immunohistochemistry(dual)</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Cytochemical</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 60mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 10mm;">Test</div>
+        <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Block</div>
+        <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Result</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 60mm; border: none; text-align: left; line-height: 1; padding-left: 10mm;"></div>
+        <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; padding-left: 4.5mm;"></div>
+        <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; padding-left: 4.5mm;"></div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Intraoperative consultation header</div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1;"></div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="row">
+        <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1; padding-left: 5mm;"></div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217mm; border: none;">
+      <div class="whiteBox" style="width: 217mm; border: none;">
+        <div class="row">
+          <div class="whiteBox" style="width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Gross Description</div>
+        </div>
+      </div>
+      <div class="whiteBox" style="width: 217mm; border: none;">
+        <div class="row">
+          <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="whiteBox" style="width: 217.25mm; height: 32mm; border: 1px dotted;">
+      <!--bottom portion of report-->
+      <div class="whiteBox" style="width: 217mm; height: 3mm; border: none;">
+        <div class="row">
+          <div class="brownBox" style="width: 100mm; border: none; text-align: left; font-size: 3mm; line-height: .75;">Yellowstone Pathology Institute, Inc.</div>
+        </div>
+      </div>
+      <div class="whiteBox" style="width: 74mm; height: 28mm; border: none; font-family: candara;">
+        <div class="brownBox" style="width: 74mm; height: 3mm; font-weight: bold; border: none; text-align: left; font-size: 3mm; line-height: .75; border-bottom: solid .5mm;">Billings</div>
+        <div class="whiteBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">150 Walt Disney lane</div>
+        <div class="whiteBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">MiddleOfNowhere, MT 55555</div>
+        <div class="whiteBox" style="width: 70mm; height: 3mm; border: none; text-align: left; font-size: 3mm;"></div>
+        <div class="whiteBox" style="width: 70mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">phone: <span style="font-weight: bold;"> (202) 505-5555</span>  fax:<span style="font-weight: bold;"> (202) 505-5556</span></div>
+        <div class="whiteBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">toll-free: <span style="font-weight: bold;">1(800) 123-4567</span></div>
+      </div>
+      <div class="whiteBox" style="width: 74mm; height: 28mm; border: none; font-family: candara;">
+        <div class="brownBox" style="width: 74mm; height: 3mm; font-weight: bold; border: none; text-align: left; font-size: 3mm; line-height: .75; border-bottom: solid .5mm;">Cody</div>
+        <div class="whiteBox" style="width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">42 MGM circle</div>
+        <div class="whiteBox" style="width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">Fairytale, NY 52525</div>
+        <div class="whiteBox" style="width: 70mm; height: 3mm; border: none; text-align: left; font-size: 3mm;"></div>
+        <div class="whiteBox" style="width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">phone: <span style="font-weight: bold;">(303) 606-6665</span> fax: <span style="font-weight: bold;"></span></div>
+        <div class="whiteBox" style="width: 74mm; height: 3mm; border: none; text-align: left; font-size: 3mm;">toll-free <span style="font-weight: bold;"></span></div>
+      </div>
+      <div class="whiteBox" style="width: 67mm; height: 28mm; border: none; font-family: candara;">
+        <div class="brownBox" style="width: 67mm; height: 3mm; border: none; text-align: left; font-size: 3mm; line-height: .75; text-align: right; border-bottom: solid .5mm;">YellowstonePathology.com</div>
+        <div class="brownBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;">Mickey M. Mouse, MD, FCAP</div>
+        <div class="brownBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;">Donald A. Duck, MD, FCAP</div>
+        <div class="brownBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;">Minnie C. Mouse, MD, FCAP</div>
+        <div class="brownBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;">Goofy G. Goof, MD, FCAP</div>
+        <div class="brownBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;">Proky P. Pig, MD, FCAP</div>
+        <div class="brownBox" style="width: 65mm; height: 3mm; border: none; text-align: left; font-size: 3mm; text-align: right;">Walt G. Disney, MD, FCAP</div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
