@@ -2,7 +2,7 @@
 
 var Handlebars = require('handlebars/runtime')
 var path = require('path')
-var views = require(path.join(__dirname, '/views.js'))
+var views = require(path.join(__dirname, '/views.js')) // eslint-disable-line
 
 module.exports.build = (data, callback) => {
   Handlebars.registerPartial('documents/surgical/page', Handlebars.templates['documents/surgical/page'])

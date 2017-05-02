@@ -8,7 +8,6 @@ module.exports.build = function (callback) {
 
   var data = {
     logoImage: null,
-    neoImage: null,
     addresses: [
       {
         addressline1: '150 Walt Disney lane',
@@ -43,9 +42,8 @@ module.exports.build = function (callback) {
 
   callback(null, data)
 
-/*
   async.eachSeries(
-    ['./images/imagea.jpg', './images/imageb.jpg'],
+    ['./images/ypilogo1400.png'],
     function (fileName, cb) {
       fs.readFile(fileName, function (err, content) {
         if (err) return console.log(err)
@@ -56,9 +54,7 @@ module.exports.build = function (callback) {
     function (err) {
       if (err) return callback(err)
       data.logoImage = images64[0]
-      data.neoImage = images64[1]
       callback(null, data)
     }
   )
-*/
 }
