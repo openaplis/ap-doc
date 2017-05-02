@@ -1,15 +1,9 @@
 var Handlebars = require("handlebars/runtime");  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
-templates['layouts/base-hl7-epic'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "";
-},"useData":true});
-templates['layouts/base-hl7-meditech'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "";
-},"useData":true});
-templates['layouts/base-html'] = template({"1":function(container,depth0,helpers,partials,data) {
+templates['layouts/base'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "        "
-    + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"title","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"title","hash":{},"data":data}) : helper)))
     + "\r\n";
 },"3":function(container,depth0,helpers,partials,data) {
     return "        Open AP LIS Requisition\r\n";
@@ -19,7 +13,7 @@ templates['layouts/base-html'] = template({"1":function(container,depth0,helpers
     var stack1;
 
   return "<!doctype html>\r\n<html>\r\n  <head>\r\n    <title>\r\n"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.title : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.title : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
     + "    </title>\r\n    <style>\r\n"
     + ((stack1 = container.invokePartial(partials.style,depth0,{"name":"style","data":data,"indent":"      ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + "    </style>\r\n  <body>\r\n    <div class=\"page\">\r\n"
@@ -33,11 +27,11 @@ templates['partials/interpretation'] = template({"compiler":[7,">= 4.0.0"],"main
     var helper;
 
   return "<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Interpretation</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; line-height: 1;\">"
-    + container.escapeExpression(((helper = (helper = helpers.report_interpretation || (depth0 != null ? depth0.report_interpretation : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"report_interpretation","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.report_interpretation || (depth0 != null ? depth0.report_interpretation : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"report_interpretation","hash":{},"data":data}) : helper)))
     + "</div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
 templates['partials/main-body'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<!--middle main body portion of the report-->\r\n<div class=\"whiteBox\" style=\"width: 217mm; height: 115mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 217mm; border: none;\">\r\n    <div class=\"row\">\r\n      <div class=\"whiteBox\" style=\"width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Cancer Case Study</div>\r\n    </div>\r\n  </div>\r\n  <div class=\"whiteBox\" style=\"width: 217mm; border: none;\">\r\n    <div class=\"row\">\r\n      <div class=\"whiteBox\" style=\"width: 100mm; border: none; text-align: left; line-height: 1;\">"
     + alias4(((helper = (helper = helpers.cancer_summary || (depth0 != null ? depth0.cancer_summary : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"cancer_summary","hash":{},"data":data}) : helper)))
@@ -64,7 +58,7 @@ templates['partials/main-body'] = template({"compiler":[7,">= 4.0.0"],"main":fun
     + "</div>\r\n";
 },"usePartial":true,"useData":true});
 templates['partials/patient-information'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<!--top portion with patient information-->\r\n<div class=\"row\">\r\n  <div class=\"whiteBox\" style=\"width: 20mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;\">Patient:</div>\r\n  <div class=\"whiteBox\" style=\"width: 45mm; border: none; font-size: 5mm; font-weight: bold; line-height: 1.25; text-align: left;\">"
     + alias4(((helper = (helper = helpers.patient_name || (depth0 != null ? depth0.patient_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"patient_name","hash":{},"data":data}) : helper)))
@@ -94,28 +88,28 @@ templates['partials/references'] = template({"compiler":[7,">= 4.0.0"],"main":fu
     var helper;
 
   return "<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">References</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; line-height: 1;\">"
-    + container.escapeExpression(((helper = (helper = helpers.report_references || (depth0 != null ? depth0.report_references : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"report_references","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.report_references || (depth0 != null ? depth0.report_references : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"report_references","hash":{},"data":data}) : helper)))
     + "</div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
 templates['partials/report-distribution'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Report Distribution</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; line-height: 1;\">"
-    + container.escapeExpression(((helper = (helper = helpers.report_distribution || (depth0 != null ? depth0.report_distribution : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"report_distribution","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.report_distribution || (depth0 != null ? depth0.report_distribution : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"report_distribution","hash":{},"data":data}) : helper)))
     + "</div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
 templates['partials/report-method'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Method</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; line-height: 1;\">"
-    + container.escapeExpression(((helper = (helper = helpers.report_method || (depth0 != null ? depth0.report_method : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"report_method","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.report_method || (depth0 != null ? depth0.report_method : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"report_method","hash":{},"data":data}) : helper)))
     + "</div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
 templates['partials/specimen-description'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=container.escapeExpression;
 
   return "<div class=\"whiteBox\" style=\"color: black; width: 216mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Specimen Description</div>\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Collection Date/Time</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; line-height: 1;\">"
-    + alias1(((helper = (helper = helpers.specimen_description || (depth0 != null ? depth0.specimen_description : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"specimen_description","hash":{},"data":data}) : helper)))
+    + alias1(((helper = (helper = helpers.specimen_description || (depth0 != null ? depth0.specimen_description : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"specimen_description","hash":{},"data":data}) : helper)))
     + "</div>\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; line-height: 1;\">"
     + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.collection_date : depth0)) != null ? stack1.time : stack1), depth0))
     + "</div>\r\n  </div>\r\n</div>\r\n";
@@ -127,7 +121,7 @@ templates['partials/ypi-reports'] = template({"compiler":[7,">= 4.0.0"],"main":f
     var helper;
 
   return "<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Other Yellowstone Pathology Institute Reports</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; line-height: 1;\">"
-    + container.escapeExpression(((helper = (helper = helpers.other_ypi_cases || (depth0 != null ? depth0.other_ypi_cases : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"other_ypi_cases","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.other_ypi_cases || (depth0 != null ? depth0.other_ypi_cases : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"other_ypi_cases","hash":{},"data":data}) : helper)))
     + "</div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
 templates['documents/hpv/hpv-hl7-epic'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -143,17 +137,18 @@ templates['documents/surgical/gross-description'] = template({"compiler":[7,">= 
     var helper;
 
   return "<div class=\"whiteBox\" style=\"width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Gross Description</div>\r\n  </div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; border: none;\">\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"width: 100mm; border: none; text-align: left; line-height: 1;\">"
-    + container.escapeExpression(((helper = (helper = helpers.gross_description || (depth0 != null ? depth0.gross_description : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"gross_description","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.gross_description || (depth0 != null ? depth0.gross_description : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"gross_description","hash":{},"data":data}) : helper)))
     + "</div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
-templates['documents/surgical/page'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+templates['documents/surgical/page'] = template({"1":function(container,depth0,helpers,partials,data) {
+    return "  \r\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = container.invokePartial(partials["surgical/surgical-header"],depth0,{"name":"surgical/surgical-header","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = container.invokePartial(partials["surgical/surgical-diagnosis"],depth0,{"name":"surgical/surgical-diagnosis","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+  return ((stack1 = container.invokePartial(partials["layouts/base"],depth0,{"name":"layouts/base","hash":{"title":"Surgical"},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"usePartial":true,"useData":true});
 templates['documents/surgical/surgical-diagnosis'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<!--middle area with outlines-->\r\n<div class=\"whiteBox\" style=\"width: 215.5mm; height: 45mm; border: solid .75mm black; border-bottom: solid .375mm black; padding: .25mm;\">\r\n  <div class=\"whiteBox\" style=\"width: 214.5mm; height: 44.5mm; border: solid .25mm black;\">\r\n    <div class=\"row\">\r\n      <div class=\"whiteBox\" style=\"width: 63mm; border: none; font-size: 3.5mm; line-height: 1.5; text-align: left; padding-left: 1mm; font-weight: bold;\">Diagnosis:</div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"whiteBox\" style=\"width: 63mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;\">"
     + alias4(((helper = (helper = helpers.specimen_blank_row || (depth0 != null ? depth0.specimen_blank_row : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"specimen_blank_row","hash":{},"data":data}) : helper)))
@@ -180,7 +175,7 @@ templates['documents/surgical/surgical-diagnosis'] = template({"compiler":[7,">=
     + "</div>\r\n    </div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
 templates['documents/surgical/surgical-header'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<!--header section of page-->\r\n<div class=\"whiteBox\" style=\"width: 105mm; border: none; height: 30mm; text-align: left;\">\r\n  <img src=\"ypilogo1400.png\" height=\"115mm\" width=\"775mm\">\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 108.5mm; border: none; height: 30mm; text-align: left;\">\r\n  <div class=\"row\">\r\n    <div class=\"brownBox\" style=\"width: 100mm; border: none; font-size: 5mm; font-weight: bold; line-height: 2; text-align: right; padding-left: 1mm;\">Surgical Pathology Report</div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"brownBox\" style=\"width: 100mm; border: none; font-size: 4mm; line-height: 3; text-align: right;\">"
     + alias4(((helper = (helper = helpers.amendment_title || (depth0 != null ? depth0.amendment_title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"amendment_title","hash":{},"data":data}) : helper)))

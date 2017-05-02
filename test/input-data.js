@@ -41,6 +41,9 @@ module.exports.build = function (callback) {
     ]
   }
 
+  callback(null, data)
+
+/*
   async.eachSeries(
     ['./images/imagea.jpg', './images/imageb.jpg'],
     function (fileName, cb) {
@@ -57,4 +60,5 @@ module.exports.build = function (callback) {
       callback(null, data)
     }
   )
+*/
 }
