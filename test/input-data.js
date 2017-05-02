@@ -1,13 +1,16 @@
 'use strict'
 
+const path = require('path')
 const async = require('async')
 const fs = require('fs')
+const accessionOrderDataPath = path.join(__dirname, 'test-data-object.17-10925.json')
 
 module.exports.build = function (callback) {
   var images64 = []
 
   var data = {
     logoImage: null,
+    accessionOrder: null,
     addresses: [
       {
         addressline1: '150 Walt Disney lane',
@@ -40,21 +43,39 @@ module.exports.build = function (callback) {
     ]
   }
 
-  callback(null, data)
+  async.series([
 
-  async.eachSeries(
-    ['./images/ypilogo1400.png'],
-    function (fileName, cb) {
-      fs.readFile(fileName, function (err, content) {
-        if (err) return console.log(err)
-        images64.push(content.toString('base64'))
+    function (cb) {
+      async.eachSeries(
+        ['./images/ypilogo1400.png'],
+        function (fileName, cb) {
+          fs.readFile(fileName, function (err, content) {
+            if (err) return console.log(err)
+            images64.push(content.toString('base64'))
+            cb(null)
+          })
+        },
+        function (err) {
+          if (err) return callback(err)
+          data.logoImage = images64[0]
+          cb(null, data)
+        }
+      )
+    },
+
+    function (cb) {
+      fs.readFile(accessionOrderDataPath, function (err, content) {
+        if(err) return cb(err)
+        var ao = JSON.parse(content)
+        data.accessionOrder = ao
         cb(null)
       })
-    },
-    function (err) {
-      if (err) return callback(err)
-      data.logoImage = images64[0]
-      callback(null, data)
     }
-  )
+
+  ],
+  function (err) {
+    if(err) return callback(err)
+    callback(null, data)
+  })
+
 }
