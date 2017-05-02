@@ -13,10 +13,12 @@ module.exports.build = (data, callback) => {
   Handlebars.registerPartial('partials/patient-information', Handlebars.templates['partials/patient-information'])
   Handlebars.registerPartial('documents/surgical/surgical-diagnosis', Handlebars.templates['documents/surgical/surgical-diagnosis'])
   Handlebars.registerPartial('partials/main-body', Handlebars.templates['partials/main-body'])
+  Handlebars.registerPartial('partials/top-body', Handlebars.templates['partials/top-body'])
+  Handlebars.registerPartial('partials/specimen-description', Handlebars.templates['partials/specimen-description'])
+  Handlebars.registerPartial('documents/surgical/gross-description', Handlebars.templates['documents/surgical/gross-description'])
   Handlebars.registerPartial('partials/footer', Handlebars.templates['partials/footer'])
 
   var template = Handlebars.templates['documents/surgical/page']
   var html = template(data)
   callback(null, html)
-
 }
