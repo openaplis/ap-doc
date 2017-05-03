@@ -225,14 +225,14 @@ templates['documents/surgical/surgical-diagnosis'] = template({"compiler":[7,">=
     + "</div>\r\n    </div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
 templates['documents/surgical/surgical-header'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<!--header section of page-->\r\n<div class=\"whiteBox\" style=\"width: 105mm; border: none; height: 30mm; text-align: left;\">\r\n  <img src=\"data:image/png;base64,"
     + alias4(((helper = (helper = helpers.logoImage || (depth0 != null ? depth0.logoImage : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"logoImage","hash":{},"data":data}) : helper)))
     + "\" height=\"115mm\" width=\"775mm\">\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 108.5mm; border: none; height: 30mm; text-align: left;\">\r\n  <div class=\"row\">\r\n    <div class=\"brownBox\" style=\"width: 100mm; border: none; font-size: 5mm; font-weight: bold; line-height: 2; text-align: right; padding-left: 1mm;\">Surgical Pathology Report</div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"brownBox\" style=\"width: 100mm; border: none; font-size: 4mm; line-height: 3; text-align: right;\">"
     + alias4(((helper = (helper = helpers.amendment_title || (depth0 != null ? depth0.amendment_title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"amendment_title","hash":{},"data":data}) : helper)))
     + "</div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style= \"width: 100mm; border: none; font-size: 4mm; line-height: 2; text-align: right;\"></div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"width: 70mm; border: none; font-size: 4mm; line-height: 2; text-align: right;\">YPI Report #:</div>\r\n    <div class=\"whiteBox\" style=\"width: 25mm; border: none; font-size: 4mm; line-height: 2; text-align: right;\">"
-    + alias4(((helper = (helper = helpers.report_number || (depth0 != null ? depth0.report_number : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"report_number","hash":{},"data":data}) : helper)))
+    + alias4(container.lambda(((stack1 = (depth0 != null ? depth0.panelSetOrder : depth0)) != null ? stack1.reportNo : stack1), depth0))
     + "</div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"whiteBox\" style=\"width: 70mm; border: none; font-size: 4mm; line-height: 2; text-align: right;\">Client Report #:</div>\r\n    <div class=\"whiteBox\" style=\"width: 25mm; border: none; font-size: 4mm; line-height: 2; text-align: right;\">"
     + alias4(((helper = (helper = helpers.client_rpt_no || (depth0 != null ? depth0.client_rpt_no : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"client_rpt_no","hash":{},"data":data}) : helper)))
     + "</div>\r\n  </div>\r\n</div>\r\n";
