@@ -9,7 +9,6 @@ const surgicalReport = require('../src/index.js').surgicalReport
 var inputData = require(path.join(__dirname, 'input-data'))
 
 describe('Surgical Report', function () {
-
   before(function (done) {
     inputData.build({
       masterAccessionNo: '17-10925',
@@ -23,7 +22,7 @@ describe('Surgical Report', function () {
 
   it('Input data tests', function (done) {
     assert.notEqual(inputData, null, 'input data cannot be null')
-    assert.isArray(inputData.addresses, 'addresses must be an array')    
+    assert.isArray(inputData.addresses, 'addresses must be an array')
     done()
   })
 

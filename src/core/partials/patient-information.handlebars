@@ -1,36 +1,22 @@
 <!--top portion with patient information-->
-<div class="row">
-  <div class="whiteBox" style="width: 20mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">Patient:</div>
-  <div class="whiteBox" style="width: 45mm; border: none; font-size: 5mm; font-weight: bold; line-height: 1.25; text-align: left;">{{patient_name}}</div>
-  <div class="whiteBox" style="width: 10mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">(DOB</div>
-  <div class="whiteBox" style="width: 35mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">{{patient_birthdate}}</div>
-  <div class="whiteBox" style="width: 40mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">{{patient_age}})</div>
-</div>
-<div class="row">
-  <div class="whiteBox" style="width: 130mm; border: none;"></div>
-  <div class="whiteBox" style="width: 46mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Report Date:</div>
-  <div class="whiteBox" style="width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{final_date}}</div>
-</div>
-<div class="row">
-  <div class="whiteBox" style="width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">Provider:</div>
-  <div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">{{physician_name}}</div>
-  <div class="whiteBox" style="width: 49mm; border: none; font-size: 3.5mm; line-height: 1.75; text-align: right; font-size: 4mm;">Accessioned:</div>
-  <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{accession_date}}</div>
-</div>
-<div class="row">
-  <div class="whiteBox" style="width: 20mm; border: none;"></div>
-  <div class="whiteBox" style="width: 108mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">{{client_name}}</div>
-  <div class="whiteBox" style="width: 48mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Date of Service:</div>
-  <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{collection_date}}</div>
-</div>
-<div class="row">
-  <div class="whiteBox" style="width: 130mm; border: none;"></div>
-  <div class="whiteBox" style="width: 46mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Client MRN:</div>
-  <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{client_mrn_no}}</div>
-</div>
-<div class="row">
-  <div class="whiteBox" style="width: 19mm; border: none;"></div>
-  <div class="whiteBox" style="width: 100mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-bottom: 1mm;">Full distribution list is provided at the end of the report</div>
-  <div class="whiteBox" style="width: 57mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm; padding-bottom: 1mm;">Client Account No:</div>
-  <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm; padding-bottom: 1mm;">{{client_account_no}}</div>
-</div>
+<div class="whiteBox" style="width: 20mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">Patient:</div>
+<div class="whiteBox" style="width: 60mm; border: none; font-size: 5mm; font-weight: bold; line-height: 1.25; text-align: left;">{{accessionOrder.pLastName}}, {{accessionOrder.pFirstName}} {{accessionOrder.pMiddleInitial}}</div>
+<div class="whiteBox" style="width: 85mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">(DOB: {{accessionOrder.pBirthdate}})</div>
+<div class="whiteBox" style="width: 130mm; border: none;"></div>
+<div class="whiteBox" style="width: 46mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Report Date:</div>
+<div class="whiteBox" style="width: 39mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{accessionOrder.finalizedDate}}</div>
+<div class="whiteBox" style="width: 19mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">Provider:</div>
+<div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">{{physician_name}}</div>
+<div class="whiteBox" style="width: 49mm; border: none; font-size: 3.5mm; line-height: 1.75; text-align: right; font-size: 4mm;">Accessioned:</div>
+<div class="whiteBox" style="width: 40mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{accessionOrder.accessionDate}}</div>
+<div class="whiteBox" style="width: 20mm; border: none;"></div>
+<div class="whiteBox" style="width: 108mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left;">{{client_name}}</div>
+<div class="whiteBox" style="width: 48mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Date of Service:</div>
+<div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{accessionOrder.collectionDate}}</div>
+<div class="whiteBox" style="width: 130mm; border: none;"></div>
+<div class="whiteBox" style="width: 46mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm;">Client MRN:</div>
+<div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm;">{{client_mrn_no}}</div>
+<div class="whiteBox" style="width: 14mm; border: none;"></div>
+<div class="whiteBox" style="width: 105mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-bottom: 1mm;">Full distribution list is provided at the end of the report</div>
+<div class="whiteBox" style="width: 57mm; border: none; line-height: 1.75; text-align: right; font-size: 4mm; padding-bottom: 1mm;">Client Account No:</div>
+<div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 1mm; padding-bottom: 1mm;">{{client_account_no}}</div>

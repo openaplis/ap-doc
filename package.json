@@ -27,7 +27,8 @@
     "async": "^2.4.0",
     "chai": "^3.5.0",
     "handlebars": "^4.0.6",
-    "stylus": "^0.54.5",
-    "standard": "*"
+    "lodash": "^4.17.4",
+    "standard": "*",
+    "stylus": "^0.54.5"
   }
 }
