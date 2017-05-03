@@ -3,14 +3,20 @@
 const path = require('path')
 const async = require('async')
 const fs = require('fs')
+const _ = require('lodash')
+
 const accessionOrderDataPath = path.join(__dirname, 'test-data.17-10925.json')
 
-module.exports.build = function (callback) {
+module.exports.build = function ({
+  masterAccessionNo = null,
+  reportNo = null
+}, callback) {
   var images64 = []
 
   var data = {
     logoImage: null,
     accessionOrder: null,
+    panelSetOrder: null,
     addresses: [
       {
         addressline1: '150 Walt Disney lane',
@@ -67,7 +73,8 @@ module.exports.build = function (callback) {
       fs.readFile(accessionOrderDataPath, function (err, content) {
         if(err) return cb(err)
         var ao = JSON.parse(content)
-        data.accessionOrder = ao
+        data.accessionOrder = ao.accessionOrder
+        data.panelSetOrder = ao.accessionOrder.panelSetOrders[0].panelSetOrder
         cb(null)
       })
     }
