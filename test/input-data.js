@@ -17,6 +17,7 @@ module.exports.build = function ({
     logoImage: null,
     accessionOrder: null,
     panelSetOrder: null,
+    testing: 'hello world',
     addresses: [
       {
         addressline1: '150 Walt Disney lane',
