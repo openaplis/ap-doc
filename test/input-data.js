@@ -3,7 +3,7 @@
 const path = require('path')
 const async = require('async')
 const fs = require('fs')
-const accessionOrderDataPath = path.join(__dirname, 'test-data-object.17-10925.json')
+const accessionOrderDataPath = path.join(__dirname, 'test-data.17-10925.json')
 
 module.exports.build = function (callback) {
   var images64 = []
