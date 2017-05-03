@@ -3,7 +3,6 @@
 const path = require('path')
 const async = require('async')
 const fs = require('fs')
-const _ = require('lodash')
 
 const accessionOrderDataPath = path.join(__dirname, 'test-data.17-10925.json')
 
@@ -85,5 +84,4 @@ module.exports.build = function ({
     if(err) return callback(err)
     callback(null, data)
   })
-
 }
