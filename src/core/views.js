@@ -215,10 +215,18 @@ templates['documents/surgical/page'] = template({"1":function(container,depth0,h
   }
 
 ,"useDecorators":true,"usePartial":true,"useData":true,"useDepths":true});
-templates['documents/surgical/surgical-diagnosis'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+templates['documents/surgical/surgical-diagnosis'] = template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "      <div class=\"whiteBox\" style=\"width: 21mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: center; font-weight: bold;\">"
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.accessionOrder : depth0)) != null ? stack1.specimenOrders : stack1)) != null ? stack1.specimenOrder : stack1)) != null ? stack1.specimenNumber : stack1), depth0))
+    + ":</div>\r\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<!--middle area with outlines-->\r\n<div class=\"whiteBox\" style=\"width: 215.5mm; border: solid .75mm black; border-bottom: solid .375mm black; padding: .25mm;\">\r\n  <div class=\"whiteBox\" style=\"width: 214.5mm; border: solid .25mm black;\">\r\n    <div class=\"whiteBox\" style=\"width: 214mm; border: 1px dotted; font-size: 3.5mm; line-height: 1.5; text-align: left; padding-left: 1mm; font-weight: bold;\">Diagnosis:</div>\r\n    <div class=\"whiteBox\" style=\"width: 214mm; border: 1px dotted;\"></div>\r\n    <div class=\"whiteBox\" style=\"width: 21mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: center; font-weight: bold;\">1.</div>\r\n    <div class=\"whiteBox\" style=\"width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;\">"
+  return "<!--middle area with outlines-->\r\n<div class=\"whiteBox\" style=\"width: 215.5mm; border: solid .75mm black; border-bottom: solid .375mm black; padding: .25mm;\">\r\n  <div class=\"whiteBox\" style=\"width: 214.5mm; border: solid .25mm black;\">\r\n    <div class=\"whiteBox\" style=\"width: 214mm; border: 1px dotted; font-size: 3.5mm; line-height: 1.5; text-align: left; padding-left: 1mm; font-weight: bold;\">Diagnosis:</div>\r\n    <div class=\"whiteBox\" style=\"width: 214mm; border: 1px dotted;\"></div>\r\n"
+    + ((stack1 = helpers.each.call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.accessionOrder : depth0)) != null ? stack1.specimenOrders : stack1)) != null ? stack1.specimenOrder : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "    <div class=\"whiteBox\" style=\"width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;\">"
     + alias4(((helper = (helper = helpers.specimen_type || (depth0 != null ? depth0.specimen_type : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"specimen_type","hash":{},"data":data}) : helper)))
     + "</div>\r\n    <div class=\"whiteBox\" style=\"width: 21mm; border: 1px dotted;\"></div>\r\n    <div class=\"whiteBox\" style=\"width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;\">"
     + alias4(((helper = (helper = helpers.diagnosis || (depth0 != null ? depth0.diagnosis : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"diagnosis","hash":{},"data":data}) : helper)))
