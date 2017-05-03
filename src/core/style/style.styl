@@ -13,7 +13,8 @@ pageHeight = 278mm
     -webkit-print-color-adjust exact
 
 html, body
-  background black
+  background-color: white
+  margin: 0px
 
 .page
   position relative
@@ -40,7 +41,8 @@ html, body
   color red
 
 .whiteBox
-  height rowHeight
+  min-height rowHeight
+  height auto
   font-size 3mm
   line-height 2
   border-left 1px solid red
@@ -50,6 +52,7 @@ html, body
   float left
   display inline-block
   text-align center
+
 
 .brownBox
   height rowHeight

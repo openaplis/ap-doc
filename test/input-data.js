@@ -71,7 +71,7 @@ module.exports.build = function ({
 
     function (cb) {
       fs.readFile(accessionOrderDataPath, function (err, content) {
-        if(err) return cb(err)
+        if (err) return cb(err)
         var ao = JSON.parse(content)
         data.accessionOrder = ao.accessionOrder
         data.panelSetOrder = ao.accessionOrder.panelSetOrders[0].panelSetOrder
@@ -81,7 +81,7 @@ module.exports.build = function ({
 
   ],
   function (err) {
-    if(err) return callback(err)
+    if (err) return callback(err)
     callback(null, data)
   })
 }
