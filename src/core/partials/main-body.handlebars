@@ -1,10 +1,3 @@
-{{! this area is for the specimen description and collection date template}}
-<div class="whiteBox" style="width: 217mm; border: none;">
-  <div class="whiteBox" style="width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Clinical Information</div>
-</div>
-<div class="whiteBox" style="width: 217mm; border: none;">
-  <div class="whiteBox" style="width: 217mm; border: none; text-align: left; line-height: 1;">{{accessionOrder.clinicalHistory}}</div>
-</div>
 <div class="whiteBox" style="width: 217mm; border: none;">
   <div class="whiteBox" style="width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Ancillary Studies</div>
 </div>
@@ -12,7 +5,10 @@
   <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1;">{{ancillary_studies_comment}}</div>
 </div>
 <div class="whiteBox" style="width: 217mm; border: none;">
-  <div class="whiteBox" style="width: 100mm; border: none; text-align: left; padding-left: 3.5mm; font-weight: bold;">specimen type</div>
+  {{#each accessionOrder.specimenOrders}}
+    <div class="whiteBox" style="width: 10mm; border: none; text-align: right; font-weight: bold;">{{specimenOrder.specimenNumber}}.</div>
+    <div class="whiteBox" style="width: 205mm; border: none; text-align: left; padding-left: 1mm; font-weight: bold;;">{{specimenOrder.description}}</div>
+  {{/each}}
 </div>
 <div class="whiteBox" style="width: 217mm; border: none;">
   <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Immunohistochemistry(single)</div>
@@ -23,23 +19,15 @@
 <div class="whiteBox" style="width: 217mm; border: none;">
   <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Cytochemical</div>
 </div>
-<div class="whiteBox" style="width: 217mm; border: none;">
+<div class="whiteBox" style="width: 62mm; border: none;">
   <div class="whiteBox" style="width: 60mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 10mm;">Test</div>
-  <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Block</div>
-  <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Result</div>
-</div>
-<div class="whiteBox" style="width: 217mm; border: none;">
   <div class="whiteBox" style="width: 60mm; border: none; text-align: left; line-height: 1; padding-left: 10mm;">{{stain_description}}</div>
-  <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; padding-left: 4.5mm;">{{block_description}}</div>
+</div>
+<div class="whiteBox" style="width: 50mm; border: none;">
+  <div class="whiteBox" style="width: 15mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Block</div>
+  <div class="whiteBox" style="width: 15mm; border: none; text-align: left; line-height: 1; padding-left: 4.5mm;">{{block_description}}</div>
+</div>
+<div class="whiteBox" style="width: 93mm; border: none;">
+  <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Result</div>
   <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; padding-left: 4.5mm;">{{stain_result}}</div>
 </div>
-<div class="whiteBox" style="width: 217mm; border: none;">
-  <div class="whiteBox" style="width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Intraoperative consultation header</div>
-</div>
-<div class="whiteBox" style="width: 217mm; border: none;">
-  <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1;">{{intraoperative_consultation_specimen}}</div>
-</div>
-<div class="whiteBox" style="width: 217mm; border: none;">
-  <div class="whiteBox" style="width: 100mm; border: none; text-align: left; line-height: 1; padding-left: 5mm;">{{intraoperative_consultation_text}}</div>
-</div>
-{{! this area is for the gross description template }}
