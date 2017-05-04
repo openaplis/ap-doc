@@ -5,10 +5,10 @@
     <div class="whiteBox" style="width: 214mm; border: 1px dotted;"></div>
     {{#each accessionOrder.specimenOrders}}
       <div class="whiteBox" style="width: 21mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: center; font-weight: bold;">{{specimenOrder.specimenNumber}}:</div>
+      <div class="whiteBox" style="width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;">{{specimenOrder.description}}</div>
+      <div class="whiteBox" style="width: 21mm; border: 1px dotted;"></div>
+      <div class="whiteBox" style="width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;">{{diagnosis}}</div>
     {{/each}}
-    <div class="whiteBox" style="width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;">{{specimen_type}}</div>
-    <div class="whiteBox" style="width: 21mm; border: 1px dotted;"></div>
-    <div class="whiteBox" style="width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;">{{diagnosis}}</div>
     <div class="whiteBox" style="width: 214mm; border: 1px dotted;"></div>
     <div class="whiteBox" style="width: 30mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;">Comment:</div>
     <div class="whiteBox" style="width: 180mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;">{{report_comment}}</div>

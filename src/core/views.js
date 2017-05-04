@@ -1,6 +1,6 @@
 var Handlebars = require("handlebars/runtime");  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['style'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "@media print {\r\n  body {\r\n    -webkit-print-color-adjust: exact;\r\n  }\r\n  .checkBox {\r\n    -webkit-print-color-adjust: exact;\r\n  }\r\n}\r\nhtml,\r\nbody {\r\n  background-color: #fff;\r\n  margin: 0px;\r\n}\r\n.page {\r\n  position: relative;\r\n  height: 278mm;\r\n  width: 217mm;\r\n  font-family: 'Verdana';\r\n  display: block;\r\n  background: #fff;\r\n  page-break-after: auto;\r\n  overflow: hidden;\r\n}\r\n.row {\r\n  height: 5mm;\r\n  width: 217mm;\r\n}\r\n.heading {\r\n  position: relative;\r\n  height: 5mm;\r\n  width: 217mm;\r\n  background: #a95346;\r\n  font-weight: bold;\r\n  text-align: center;\r\n  letter-spacing: 0.1mm;\r\n  color: #a95346;\r\n}\r\n.whiteBox {\r\n  min-height: 5mm;\r\n  height: auto;\r\n  font-size: 3mm;\r\n  line-height: 2;\r\n  border-left: 1px solid #a95346;\r\n  border-bottom: 1px solid #a95346;\r\n  color: #000;\r\n  letter-spacing: 0.1mm;\r\n  float: left;\r\n  display: inline-block;\r\n  text-align: center;\r\n}\r\n.brownBox {\r\n  height: 5mm;\r\n  font-size: 3mm;\r\n  line-height: 2;\r\n  border-left: 1px solid #a95346;\r\n  border-bottom: 1px solid #a95346;\r\n  color: #a95346;\r\n  letter-spacing: 0.1mm;\r\n  float: left;\r\n  display: inline-block;\r\n  text-align: center;\r\n}\r\n.yellowBox {\r\n  height: 5mm;\r\n  font-size: 3mm;\r\n  line-height: 2;\r\n  border-left: 1px solid #a95346;\r\n  border-bottom: 1px solid #a95346;\r\n  color: #a95346;\r\n  letter-spacing: 0.1mm;\r\n  float: left;\r\n  display: inline-block;\r\n  text-align: center;\r\n  background-color: #fff19c;\r\n}\r\n.checkBox {\r\n  width: 2mm;\r\n  height: 2mm;\r\n  background-color: #fff;\r\n  position: relative;\r\n  display: inline-block;\r\n  box-shadow: 2px 2px #a95346;\r\n}\r\n.underLine {\r\n  height: 4mm;\r\n  width: 68mm;\r\n  position: relative;\r\n  display: inline-block;\r\n  float: left;\r\n}\r\n.highlight {\r\n  background-color: #fff19c;\r\n}\r\n";
+    return "@media print {\n  body {\n    -webkit-print-color-adjust: exact;\n  }\n  .checkBox {\n    -webkit-print-color-adjust: exact;\n  }\n}\nhtml,\nbody {\n  background-color: #fff;\n  margin: 0px;\n}\n.page {\n  position: relative;\n  min-height: 278mm;\n  height: auto;\n  width: 217mm;\n  font-family: 'Verdana';\n  display: block;\n  background: #fff;\n  page-break-after: auto;\n}\n.row {\n  height: 5mm;\n  width: 217mm;\n}\n.heading {\n  position: relative;\n  height: 5mm;\n  width: 217mm;\n  background: #a95346;\n  font-weight: bold;\n  text-align: center;\n  letter-spacing: 0.1mm;\n  color: #a95346;\n}\n.whiteBox {\n  min-height: 5mm;\n  height: auto;\n  font-size: 3mm;\n  line-height: 2;\n  border-left: 1px solid #a95346;\n  border-bottom: 1px solid #a95346;\n  color: #000;\n  letter-spacing: 0.1mm;\n  float: left;\n  display: inline-block;\n  text-align: center;\n}\n.brownBox {\n  height: 5mm;\n  font-size: 3mm;\n  line-height: 2;\n  border-left: 1px solid #a95346;\n  border-bottom: 1px solid #a95346;\n  color: #a95346;\n  letter-spacing: 0.1mm;\n  float: left;\n  display: inline-block;\n  text-align: center;\n}\n.yellowBox {\n  height: 5mm;\n  font-size: 3mm;\n  line-height: 2;\n  border-left: 1px solid #a95346;\n  border-bottom: 1px solid #a95346;\n  color: #a95346;\n  letter-spacing: 0.1mm;\n  float: left;\n  display: inline-block;\n  text-align: center;\n  background-color: #fff19c;\n}\n.checkBox {\n  width: 2mm;\n  height: 2mm;\n  background-color: #fff;\n  position: relative;\n  display: inline-block;\n  box-shadow: 2px 2px #a95346;\n}\n.underLine {\n  height: 4mm;\n  width: 68mm;\n  position: relative;\n  display: inline-block;\n  float: left;\n}\n.highlight {\n  background-color: #fff19c;\n}\n";
 },"useData":true});
 templates['layouts/base'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper;
@@ -153,27 +153,41 @@ templates['partials/report-method'] = template({"compiler":[7,">= 4.0.0"],"main"
     + container.escapeExpression(((helper = (helper = helpers.report_method || (depth0 != null ? depth0.report_method : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"report_method","hash":{},"data":data}) : helper)))
     + "</div>\r\n</div>\r\n";
 },"useData":true});
-templates['partials/specimen-description'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=container.escapeExpression, alias2=container.lambda;
+templates['partials/specimen-description'] = template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "<div class=\"whiteBox\" style=\"color: black; width: 216mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Specimen Description</div>\r\n  <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Collection Date/Time</div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; line-height: 1;\">"
-    + alias1(((helper = (helper = helpers.specimen_description || (depth0 != null ? depth0.specimen_description : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"specimen_description","hash":{},"data":data}) : helper)))
-    + "</div>\r\n  <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; line-height: 1;\">"
-    + alias1(alias2(((stack1 = (depth0 != null ? depth0.accessionOrder : depth0)) != null ? stack1.collectionDate : stack1), depth0))
-    + alias1(alias2(((stack1 = (depth0 != null ? depth0.accessionOrder : depth0)) != null ? stack1.collectionTime : stack1), depth0))
-    + "</div>\r\n</div>\r\n";
+  return "  <div class=\"whiteBox\" style=\"color: black; width: 5mm; border: none; text-align: left; line-height: 1;\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.specimenOrder : depth0)) != null ? stack1.specimenNumber : stack1), depth0))
+    + ".)</div>\r\n    <div class=\"whiteBox\" style=\"color: black; width: 104mm; border: none; text-align: left; line-height: 1;\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.specimenOrder : depth0)) != null ? stack1.description : stack1), depth0))
+    + "</div>\r\n    <div class=\"whiteBox\" style=\"color: black; width: 104mm; border: none; text-align: left; line-height: 1;\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.specimenOrder : depth0)) != null ? stack1.collectionDate : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.specimenOrder : depth0)) != null ? stack1.collectionTime : stack1), depth0))
+    + "</div>\r\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<div class=\"whiteBox\" style=\"color: black; width: 216mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Specimen Description</div>\r\n  <div class=\"whiteBox\" style=\"color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Collection Date/Time</div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"color: black; width: 217mm; border: none;\">\r\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.accessionOrder : depth0)) != null ? stack1.specimenOrders : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>\r\n";
 },"useData":true});
 templates['partials/test-details'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "";
 },"useData":true});
-templates['partials/top-body'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=container.escapeExpression;
+templates['partials/top-body'] = template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "    <div class=\"whiteBox\" style=\"width: 217mm; border: none; text-align: left; line-height: 1;\">"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.panelSetOrder : depth0)) != null ? stack1.microscopicX : stack1), depth0))
+    + "</div>\r\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
   return "<!--middle main body portion of the report-->\r\n<div class=\"whiteBox\" style=\"width: 217mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Cancer Case Study</div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 100mm; border: none; text-align: left; line-height: 1;\">"
-    + alias1(((helper = (helper = helpers.cancer_summary || (depth0 != null ? depth0.cancer_summary : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"cancer_summary","hash":{},"data":data}) : helper)))
-    + "</div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Microscopic Description</div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 217mm; border: none; text-align: left; line-height: 1;\">"
-    + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.panelSetOrder : depth0)) != null ? stack1.microscopicX : stack1), depth0))
-    + "</div>\r\n</div>\r\n";
+    + container.escapeExpression(((helper = (helper = helpers.cancer_summary || (depth0 != null ? depth0.cancer_summary : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"cancer_summary","hash":{},"data":data}) : helper)))
+    + "</div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;\">Microscopic Description</div>\r\n</div>\r\n<div class=\"whiteBox\" style=\"width: 217mm; border: none;\">\r\n"
+    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.accessionOrder : depth0)) != null ? stack1.panelSetOrders : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\r\n</div>\r\n";
 },"useData":true});
 templates['partials/ypi-reports'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;
@@ -216,21 +230,21 @@ templates['documents/surgical/page'] = template({"1":function(container,depth0,h
 
 ,"useDecorators":true,"usePartial":true,"useData":true,"useDepths":true});
 templates['documents/surgical/surgical-diagnosis'] = template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, helper, alias1=container.lambda, alias2=container.escapeExpression;
 
   return "      <div class=\"whiteBox\" style=\"width: 21mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: center; font-weight: bold;\">"
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.specimenOrder : depth0)) != null ? stack1.specimenNumber : stack1), depth0))
-    + ":</div>\r\n";
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.specimenOrder : depth0)) != null ? stack1.specimenNumber : stack1), depth0))
+    + ":</div>\r\n      <div class=\"whiteBox\" style=\"width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.specimenOrder : depth0)) != null ? stack1.description : stack1), depth0))
+    + "</div>\r\n      <div class=\"whiteBox\" style=\"width: 21mm; border: 1px dotted;\"></div>\r\n      <div class=\"whiteBox\" style=\"width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;\">"
+    + alias2(((helper = (helper = helpers.diagnosis || (depth0 != null ? depth0.diagnosis : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"diagnosis","hash":{},"data":data}) : helper)))
+    + "</div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<!--middle area with outlines-->\r\n<div class=\"whiteBox\" style=\"width: 215.5mm; border: solid .75mm black; border-bottom: solid .375mm black; padding: .25mm;\">\r\n  <div class=\"whiteBox\" style=\"width: 214.5mm; border: solid .25mm black;\">\r\n    <div class=\"whiteBox\" style=\"width: 214mm; border: 1px dotted; font-size: 3.5mm; line-height: 1.5; text-align: left; padding-left: 1mm; font-weight: bold;\">Diagnosis:</div>\r\n    <div class=\"whiteBox\" style=\"width: 214mm; border: 1px dotted;\"></div>\r\n"
     + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.accessionOrder : depth0)) != null ? stack1.specimenOrders : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "    <div class=\"whiteBox\" style=\"width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;\">"
-    + alias4(((helper = (helper = helpers.specimen_type || (depth0 != null ? depth0.specimen_type : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"specimen_type","hash":{},"data":data}) : helper)))
-    + "</div>\r\n    <div class=\"whiteBox\" style=\"width: 21mm; border: 1px dotted;\"></div>\r\n    <div class=\"whiteBox\" style=\"width: 190mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;\">"
-    + alias4(((helper = (helper = helpers.diagnosis || (depth0 != null ? depth0.diagnosis : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"diagnosis","hash":{},"data":data}) : helper)))
-    + "</div>\r\n    <div class=\"whiteBox\" style=\"width: 214mm; border: 1px dotted;\"></div>\r\n    <div class=\"whiteBox\" style=\"width: 30mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;\">Comment:</div>\r\n    <div class=\"whiteBox\" style=\"width: 180mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;\">"
+    + "    <div class=\"whiteBox\" style=\"width: 214mm; border: 1px dotted;\"></div>\r\n    <div class=\"whiteBox\" style=\"width: 30mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;\">Comment:</div>\r\n    <div class=\"whiteBox\" style=\"width: 180mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;\">"
     + alias4(((helper = (helper = helpers.report_comment || (depth0 != null ? depth0.report_comment : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"report_comment","hash":{},"data":data}) : helper)))
     + "</div>\r\n    <div class=\"whiteBox\" style=\"width: 105mm; border: 1px dotted;\"></div>\r\n    <div class=\"whiteBox\" style=\"width: 107mm; border: 1px dotted; font-size: 3.5mm; line-height: 1; text-align: center;\">"
     + alias4(((helper = (helper = helpers.pathologist_signature || (depth0 != null ? depth0.pathologist_signature : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"pathologist_signature","hash":{},"data":data}) : helper)))
