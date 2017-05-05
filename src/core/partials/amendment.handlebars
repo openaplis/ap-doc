@@ -1,10 +1,12 @@
-<div class="whiteBox" style="width: 215.5mm; border: solid .75mm black; border-top: solid .375mm black; padding: .25mm;">
-  <div class="whiteBox" style="width: 214.5mm; border: solid .25mm black;">
-    <div class="whiteBox" style="width: 200mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 5mm; font-weight: bold;">{{amendment_date_time}}</div>
-    <div class="whiteBox" style="width: 200mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 5mm;">{{amendment_text}}</div>
-    <div class="whiteBox" style="width: 95mm; border: none;"></div>
-    <div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: center;">{{amendment_signature}}</div>
-    <div class="whiteBox" style="width: 95mm; border: none;"></div>
-    <div class="whiteBox" style="width: 107mm; border: none; font-size: 2.5mm; line-height: 1; text-align: center; padding-left: 1mm;">{{signature_title}}</div>
+{{#if content}}
+  <div class="whiteBox" style="width: 215.5mm; border: solid .75mm black; border-top: solid .375mm black; padding: .25mm;">
+    <div class="whiteBox" style="width: 214.5mm; border: solid .25mm black;">
+      <div class="whiteBox" style="width: 200mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 5mm; font-weight: bold;">{{amendment_date_time}}</div>
+      <div class="whiteBox" style="width: 200mm; border: none; font-size: 3.5mm; line-height: 2; text-align: left; padding-left: 5mm;">{{amendment_text}}</div>
+      <div class="whiteBox" style="width: 95mm; border: none;"></div>
+      <div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 2; text-align: center;">{{amendment_signature}}</div>
+      <div class="whiteBox" style="width: 95mm; border: none;"></div>
+      <div class="whiteBox" style="width: 107mm; border: none; font-size: 2.5mm; line-height: 1; text-align: center; padding-left: 1mm;">{{signature_title}}</div>
+    </div>
   </div>
-</div>
+{{/if}}
