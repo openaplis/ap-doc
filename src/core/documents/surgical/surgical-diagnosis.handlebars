@@ -9,13 +9,15 @@
       <div class="whiteBox" style="width: 21mm; border: none;"></div>
       <div class="whiteBox" style="width: 190mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;">{{diagnosis}}</div>
     {{/each}}
-    <div class="whiteBox" style="width: 214mm; border: none;"></div>
-    <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;">Comment:</div>
-    <div class="whiteBox" style="width: 180mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;">{{report_comment}}</div>
-    <div class="whiteBox" style="width: 105mm; border: none;"></div>
-    <div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 1; text-align: center;">{{pathologist_signature}}</div>
-    <div class="whiteBox" style="width: 105mm; border: none;"></div>
-    <div class="whiteBox" style="width: 107mm; border: none; font-size: 2.5mm; text-align: center;">*** E-signed {{accessionOrder.finalizedDate}} ***</div>
-    <div class="whiteBox" style="width: 214mm; border: none;"></div>
+    {{#if content}}
+      <div class="whiteBox" style="width: 214mm; border: none;"></div>
+      <div class="whiteBox" style="width: 30mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm; font-weight: bold;">Comment:</div>
+      <div class="whiteBox" style="width: 180mm; border: none; font-size: 3.5mm; line-height: 1; text-align: left; padding-left: 1mm;">{{report_comment}}</div>
+      <div class="whiteBox" style="width: 105mm; border: none;"></div>
+      <div class="whiteBox" style="width: 107mm; border: none; font-size: 3.5mm; line-height: 1; text-align: center;">{{pathologist_signature}}</div>
+      <div class="whiteBox" style="width: 105mm; border: none;"></div>
+      <div class="whiteBox" style="width: 107mm; border: none; font-size: 2.5mm; text-align: center;">*** E-signed {{accessionOrder.finalizedDate}} ***</div>
+      <div class="whiteBox" style="width: 214mm; border: none;"></div>
+    {{/if}}
   </div>
 </div>
