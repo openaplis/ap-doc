@@ -3,10 +3,15 @@
     {{> partials/header }}
     {{> partials/patient-information }}
     {{> documents/surgical/surgical-diagnosis }}
+    {{> partials/amendment }}
     {{> partials/top-body}}
     {{> partials/specimen-description}}
+    {{> partials/clinical-information }}
     {{> partials/main-body }}
+    {{> partials/intraoperative-consult }}
     {{> documents/surgical/gross-description}}
+  {{/inline}}
+  {{#*inline "content-footer"}}
     {{> partials/footer }}
   {{/inline}}
 {{/layouts/base}}

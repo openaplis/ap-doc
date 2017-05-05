@@ -16,6 +16,9 @@ module.exports.build = (data, callback) => {
   Handlebars.registerPartial('partials/top-body', Handlebars.templates['partials/top-body'])
   Handlebars.registerPartial('partials/specimen-description', Handlebars.templates['partials/specimen-description'])
   Handlebars.registerPartial('documents/surgical/gross-description', Handlebars.templates['documents/surgical/gross-description'])
+  Handlebars.registerPartial('partials/amendment', Handlebars.templates['partials/amendment'])
+  Handlebars.registerPartial('partials/clinical-information', Handlebars.templates['partials/clinical-information'])
+  Handlebars.registerPartial('partials/intraoperative-consult', Handlebars.templates['partials/intraoperative-consult'])
   Handlebars.registerPartial('partials/footer', Handlebars.templates['partials/footer'])
 
   var template = Handlebars.templates['documents/surgical/page']
