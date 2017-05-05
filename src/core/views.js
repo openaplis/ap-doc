@@ -1,6 +1,6 @@
 var Handlebars = require("handlebars/runtime");  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['style'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "@media print {\n  body {\n    -webkit-print-color-adjust: exact;\n  }\n  .checkBox {\n    -webkit-print-color-adjust: exact;\n  }\n}\nhtml,\nbody {\n  background-color: #fff;\n  margin: 0px;\n}\n.page {\n  position: relative;\n  min-height: 278mm;\n  height: auto;\n  width: 217mm;\n  font-family: 'Verdana';\n  display: block;\n  background: #fff;\n  page-break-after: auto;\n}\n.row {\n  height: 5mm;\n  width: 217mm;\n}\n.heading {\n  position: relative;\n  height: 5mm;\n  width: 217mm;\n  background: #a95346;\n  font-weight: bold;\n  text-align: center;\n  letter-spacing: 0.1mm;\n  color: #a95346;\n}\n.whiteBox {\n  min-height: 5mm;\n  height: auto;\n  font-size: 3mm;\n  line-height: 2;\n  border-left: 1px solid #a95346;\n  border-bottom: 1px solid #a95346;\n  color: #000;\n  letter-spacing: 0.1mm;\n  float: left;\n  display: inline-block;\n  text-align: center;\n}\n.brownBox {\n  height: 5mm;\n  font-size: 3mm;\n  line-height: 2;\n  border-left: 1px solid #a95346;\n  border-bottom: 1px solid #a95346;\n  color: #a95346;\n  letter-spacing: 0.1mm;\n  float: left;\n  display: inline-block;\n  text-align: center;\n}\n.yellowBox {\n  height: 5mm;\n  font-size: 3mm;\n  line-height: 2;\n  border-left: 1px solid #a95346;\n  border-bottom: 1px solid #a95346;\n  color: #a95346;\n  letter-spacing: 0.1mm;\n  float: left;\n  display: inline-block;\n  text-align: center;\n  background-color: #fff19c;\n}\n.checkBox {\n  width: 2mm;\n  height: 2mm;\n  background-color: #fff;\n  position: relative;\n  display: inline-block;\n  box-shadow: 2px 2px #a95346;\n}\n.underLine {\n  height: 4mm;\n  width: 68mm;\n  position: relative;\n  display: inline-block;\n  float: left;\n}\n.highlight {\n  background-color: #fff19c;\n}\n";
+    return "@media print {\n  body {\n    -webkit-print-color-adjust: exact;\n  }\n  .checkBox {\n    -webkit-print-color-adjust: exact;\n  }\n}\nhtml,\nbody {\n  background-color: #fff;\n  margin: 0px;\n}\n.page {\n  position: relative;\n  height: 246mm;\n  width: 217mm;\n  font-family: 'Verdana';\n  display: block;\n  background: #fff;\n}\n.row {\n  height: 5mm;\n  width: 217mm;\n}\n.heading {\n  position: relative;\n  height: 5mm;\n  width: 217mm;\n  background: #a95346;\n  font-weight: bold;\n  text-align: center;\n  letter-spacing: 0.1mm;\n  color: #a95346;\n}\n.whiteBox {\n  min-height: 5mm;\n  height: auto;\n  font-size: 3mm;\n  line-height: 2;\n  border-left: 1px solid #a95346;\n  border-bottom: 1px solid #a95346;\n  color: #000;\n  letter-spacing: 0.1mm;\n  float: left;\n  display: inline-block;\n  text-align: center;\n}\n.brownBox {\n  height: 5mm;\n  font-size: 3mm;\n  line-height: 2;\n  border-left: 1px solid #a95346;\n  border-bottom: 1px solid #a95346;\n  color: #a95346;\n  letter-spacing: 0.1mm;\n  float: left;\n  display: inline-block;\n  text-align: center;\n}\n.yellowBox {\n  height: 5mm;\n  font-size: 3mm;\n  line-height: 2;\n  border-left: 1px solid #a95346;\n  border-bottom: 1px solid #a95346;\n  color: #a95346;\n  letter-spacing: 0.1mm;\n  float: left;\n  display: inline-block;\n  text-align: center;\n  background-color: #fff19c;\n}\n.checkBox {\n  width: 2mm;\n  height: 2mm;\n  background-color: #fff;\n  position: relative;\n  display: inline-block;\n  box-shadow: 2px 2px #a95346;\n}\n.underLine {\n  height: 4mm;\n  width: 68mm;\n  position: relative;\n  display: inline-block;\n  float: left;\n}\n.highlight {\n  background-color: #fff19c;\n}\n";
 },"useData":true});
 templates['layouts/base'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper;
@@ -21,7 +21,9 @@ templates['layouts/base'] = template({"1":function(container,depth0,helpers,part
     + ((stack1 = container.invokePartial(partials.style,depth0,{"name":"style","data":data,"indent":"      ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + "    </style>\r\n  <body>\r\n    <div class=\"page\">\r\n"
     + ((stack1 = container.invokePartial(partials["content-block"],depth0,{"name":"content-block","fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "    </div>\r\n  </body>\r\n</html>\r\n";
+    + "    </div>\r\n  </body>\r\n  <footer>\r\n"
+    + ((stack1 = container.invokePartial(partials["content-footer"],depth0,{"name":"content-footer","fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "  </footer>\r\n</html>\r\n";
 },"usePartial":true,"useData":true});
 templates['partials/amendment'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -250,8 +252,11 @@ templates['documents/surgical/page'] = template({"1":function(container,depth0,h
     + ((stack1 = container.invokePartial(partials["partials/clinical-information"],depth0,{"name":"partials/clinical-information","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials["partials/main-body"],depth0,{"name":"partials/main-body","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials["partials/intraoperative-consult"],depth0,{"name":"partials/intraoperative-consult","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = container.invokePartial(partials["documents/surgical/gross-description"],depth0,{"name":"documents/surgical/gross-description","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = container.invokePartial(partials["partials/footer"],depth0,{"name":"partials/footer","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+    + ((stack1 = container.invokePartial(partials["documents/surgical/gross-description"],depth0,{"name":"documents/surgical/gross-description","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"4":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = container.invokePartial(partials["partials/footer"],depth0,{"name":"partials/footer","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1;
 
@@ -261,6 +266,7 @@ templates['documents/surgical/page'] = template({"1":function(container,depth0,h
   var decorators = container.decorators;
 
   fn = decorators.inline(fn,props,container,{"name":"inline","hash":{},"fn":container.program(2, data, 0, blockParams, depths),"inverse":container.noop,"args":["content-block"],"data":data}) || fn;
+  fn = decorators.inline(fn,props,container,{"name":"inline","hash":{},"fn":container.program(4, data, 0, blockParams, depths),"inverse":container.noop,"args":["content-footer"],"data":data}) || fn;
   return fn;
   }
 
