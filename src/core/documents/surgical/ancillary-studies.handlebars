@@ -22,14 +22,14 @@
         <div class="whiteBox" style="width: 60mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 10mm;">Test</div>
           <div class="whiteBox" style="width: 60mm; border: none; text-align: left; line-height: 1; padding-left: 10mm;">{{stain_description}}</div>
       </div>
-      <div class="whiteBox" style="width: 50mm; border: none;">
-        <div class="whiteBox" style="width: 15mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Block</div>
-        {{#each specimenOrder.aliquotOrders}}          
-          <div class="whiteBox" style="width: 15mm; border: none; text-align: left; line-height: 1; padding-left: 4.5mm;">{{aliquotOrder.label}}</div>
+      <div class="whiteBox" style="width: 16mm; border: none;">
+        <div class="whiteBox" style="width: 15mm; border: none; text-align: center; line-height: 1; font-weight: bold; text-decoration: underline; padding-right: 5mm;">Block</div>
+        {{#each specimenOrder.aliquotOrders}}
+          <div class="whiteBox" style="width: 15mm; border: none; text-align: center; line-height: 1;;">{{aliquotOrder.label}}</div>
         {{/each}}
       </div>
       <div class="whiteBox" style="width: 104mm; border: none;">
-        <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 4.5mm;">Result</div>
+        <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; font-weight: bold; text-decoration: underline; padding-left: 15mm;">Result</div>
           <div class="whiteBox" style="width: 30mm; border: none; text-align: left; line-height: 1; padding-left: 4.5mm;">{{stain_result}}</div>
       </div>
     </div>

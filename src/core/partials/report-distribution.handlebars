@@ -1,6 +1,11 @@
 <div class="whiteBox" style="color: black; width: 217mm; border: none;">
   <div class="whiteBox" style="color: black; width: 100mm; border: none; text-align: left; font-weight: bold; text-decoration: underline;">Report Distribution</div>
 </div>
-<div class="whiteBox" style="color: black; width: 217mm; border: none;">
-  <div class="whiteBox" style="color: black; width: 100mm; border: none; text-align: left; line-height: 1;">{{report_distribution}}</div>
-</div>
+{{#each panelSetOrder.testOrderReportDistributions}}
+  <div class="whiteBox" style="color: black; width: 217mm; border: none;">
+    <div class="whiteBox" style="color: black; width: 10mm; border: none; text-align: left; line-height: 1;">{{testOrderReportDistribution.distributionType}}</div>
+    <div class="whiteBox" style="color: black; width: 50mm; border: none; text-align: left; line-height: 1;">{{testOrderReportDistribution.clientName}}</div>
+    <div class="whiteBox" style="color: black; width: 50mm; border: none; text-align: left; line-height: 1;">{{testOrderReportDistribution.physicianName}}</div>
+    <div class="whiteBox" style="color: black; width: 107mm; border: none; text-align: left; line-height: 1;"></div>
+  </div>
+{{/each}}
