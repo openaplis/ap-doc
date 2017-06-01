@@ -28,6 +28,7 @@
     "chai": "^3.5.0",
     "handlebars": "^4.0.6",
     "lodash": "^4.17.4",
+    "pdfkit": "^0.8.2",
     "standard": "*",
     "stylus": "^0.54.5"
   }
