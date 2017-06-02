@@ -42,14 +42,14 @@ var pageCount = doc.bufferedPageRange().count
 
 for(var i=0; i<pageCount; i++)
 {
-  console.log('page: ' + i)
+
   doc.switchToPage(i)
   doc.text('bla bla', 75, 125)
 }
 
 for(var i=0; i<pageCount; i++)
 {
-  console.log('page: ' + i)
+
   doc.switchToPage(i)
   doc.switchToPage(1)
   doc.fontSize(15)
