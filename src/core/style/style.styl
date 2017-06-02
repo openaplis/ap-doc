@@ -4,6 +4,7 @@ yellow = #fff19c
 
 rowHeight = 5mm
 pageWidth = 217mm
+pageHeight = 278mm
 
 @media print
   body
@@ -11,12 +12,16 @@ pageWidth = 217mm
   .checkBox
     -webkit-print-color-adjust exact
   .page
-    height 246mm
+    height pageHeight
     position relative
     width pageWidth
     font-family 'Verdana'
     display block
     background white
+  footer
+    bottom 0
+    position fixed
+    display block
 
 html, body
   background-color: white
@@ -25,9 +30,15 @@ html, body
 .page
   position relative
   width pageWidth
+  height pageHeight
   font-family 'Verdana'
   display block
   background white
+
+footer
+  bottom 0
+  position fixed
+  display block
 
 .row
   height rowHeight
@@ -55,7 +66,6 @@ html, body
   float left
   display inline-block
   text-align center
-
 
 .brownBox
   height rowHeight
