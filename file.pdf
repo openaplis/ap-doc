@@ -17,45 +17,15 @@ endobj
 >>
 >>
 endobj
-9 0 obj
-<<
-/Type /Page
-/Parent 1 0 R
-/MediaBox [0 0 612 792]
-/Contents 7 0 R
-/Resources 8 0 R
->>
-endobj
-8 0 obj
-<<
-/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
-/Font <<
-/F1 6 0 R
->>
->>
-endobj
-12 0 obj
-<<
-/Type /Page
-/Parent 1 0 R
-/MediaBox [0 0 612 792]
-/Contents 10 0 R
-/Resources 11 0 R
->>
-endobj
-11 0 obj
-<<
-/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
-/Font <<
-/F1 6 0 R
->>
->>
-endobj
-13 0 obj
+7 0 obj
 <<
 /Producer (PDFKit)
 /Creator (PDFKit)
+<<<<<<< HEAD
 /CreationDate (D:20170601213607Z)
+=======
+/CreationDate (D:20170602185624Z)
+>>>>>>> a8fad6077f16f8a6a2c04dd3ad06808ed3496575
 /Title (Tile of File Here)
 /Author (Some Author)
 >>
@@ -77,7 +47,36 @@ endobj
 1 0 obj
 <<
 /Type /Pages
-/Count 3
-/Kids [5 0 R 9 0 R 12 0 R]
+/Count 1
+/Kids [5 0 R]
 >>
 endobj
+3 0 obj
+<<
+/Length 131
+/Filter /FlateDecode
+>>
+stream
+xœ…±
+ADû|E~à4É%+-ì„íÄê`»+üÿÆ•³f^ó”¥gĞ^(ÆËJÒ/v¬o¨ìÒ©—×•ögeë«ÑmŠKdÉ15“°H6ØÌƒOğ™åÎõB§J×*vø/“ç!F“­ñúÑŸeKGù<İÏ-›
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000495 00000 n 
+0000000446 00000 n 
+0000000552 00000 n 
+0000000119 00000 n 
+0000000015 00000 n 
+0000000349 00000 n 
+0000000208 00000 n 
+trailer
+<<
+/Size 8
+/Root 2 0 R
+/Info 7 0 R
+>>
+startxref
+755
+%%EOF

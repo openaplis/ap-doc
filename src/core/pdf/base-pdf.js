@@ -1,21 +1,42 @@
 var fs = require('fs')
 var PDFDocument = require('pdfkit')
 
-var doc = new PDFDocument({
-  size: [612, 792],
-  bufferPages: true,
-  margins: {
-    top: 150,
-    bottom: 25,
-    left: 25,
-    right: 25
-  },
-  info: {
-    Title: 'Tile of File Here',
-    Author: 'Some Author',
-  }
-})
+module.exports = {
+    new: function () {
+      var doc = new PDFDocument({
+        size: [612, 792],
+        bufferPages: true,
+        margins: {
+          top: 150,
+          bottom: 25,
+          left: 25,
+          right: 25
+        },
+        info: {
+          Title: 'Tile of File Here',
+          Author: 'Some Author',
+        }
+      })
 
+      doc.bufferedPageRange()
+      return doc
+    },
+
+    save: function (doc, callback) {
+      doc.flushPages()
+      var ws = doc.pipe(fs.createWriteStream('./file.pdf'))
+      doc.end()
+
+      ws.on('error', function (err) {
+        callback(err)
+      })
+
+      ws.on('finish', function () {
+        callback(null, 'Document has been saved.')
+      })
+    }
+
+<<<<<<< HEAD
 doc.bufferedPageRange()
 // Write stuff into PDF
 
@@ -57,20 +78,6 @@ for(var i=0; i<pageCount; i++)
   doc.switchToPage(2)
   doc.fontSize(15)
   doc.text('secondary heading?', 400, 75)
+=======
+>>>>>>> a8fad6077f16f8a6a2c04dd3ad06808ed3496575
 }
-
-doc.switchToPage(0)
-doc.fontSize(25)
-doc.text('Surgical Report', 400, 25);
-
-doc.flushPages();
-
-// Stream contents to a file
-doc.pipe(
-  fs.createWriteStream('./file.pdf')
-).on('finish', function () {
-  console.log('PDF closed')
-})
-
-// Close PDF and write file.
-doc.end();

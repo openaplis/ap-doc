@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var fs = require('fs')
 var PDFDocument = require('pdfkit')
 
@@ -60,3 +61,13 @@ doc.pipe(
 
 // Close PDF and write file.
 doc.end();
+=======
+'use strict'
+
+module.exports = {
+  write: function (doc) {
+    doc.fontSize(25)
+    doc.text('Surgical Report', 400, 25);    
+  }
+}
+>>>>>>> a8fad6077f16f8a6a2c04dd3ad06808ed3496575
