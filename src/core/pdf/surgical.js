@@ -1,13 +1,19 @@
 'use strict'
 
 var path = require('path')
+
 var baseDoc = require(path.join(__dirname, 'base-pdf'))
+var header = require(path.join(__dirname, 'header'))
+var body = require(path.join(__dirname, 'body'))
 
 module.exports = {
-  create: function () {
+  create: function (callback) {
     var doc = baseDoc.new()
-    //doc.fontSize(25)
-    //  .text('Surgical Report', 400, 25);
-    //baseDoc.save(doc)
+    header.write(doc)
+    body.write(doc)
+    baseDoc.save(doc, function(err, result) {
+      if(err) return callback(err)
+      callback(null, result)
+    })
   }
 }
