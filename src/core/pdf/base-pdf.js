@@ -35,5 +35,4 @@ module.exports = {
         callback(null, 'Document has been saved.')
       })
     }
-
 }
