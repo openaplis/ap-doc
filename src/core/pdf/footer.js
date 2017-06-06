@@ -5,7 +5,7 @@ module.exports = {
     doc.switchToPage(0)
 
     doc.fontSize(8)
-    doc.font('Candarab.ttf')
+    doc.font('src/core/pdf/fonts/Candarab.ttf')
     doc.text('Yellowstone Pathology Institute, Inc.', 18, 675)
     doc.text('Billings', 18, 685)
     doc.text('Cody', 250, 685)
@@ -13,7 +13,7 @@ module.exports = {
     doc.text('406.238.6361', 125, 730)
     doc.text('307.578.1850', 277, 730)
     doc.text('406.238.6361', 357, 730)
-    doc.font('Candara.ttf')
+    doc.font('src/core/pdf/fonts/Candara.ttf')
     doc.text('YellowstonePathology.com', 480, 685, {
       align: 'right'
     })
